@@ -1,0 +1,16 @@
+.adminhome {
+    margin-top: 1.3rem;
+}
+
+.adminhome .component {
+
+    padding: var(--card-padding);
+    border-radius: var(--card-border-radius);
+
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.adminhome .component:hover {
+    box-shadow: none;
+}

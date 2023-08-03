@@ -1,0 +1,228 @@
+ .analyse {
+     display: grid;
+     grid-template-columns: repeat(4, 1fr);
+     gap: 1.6rem;
+ }
+
+ .analyse>div {
+     padding: var(--card-padding);
+     border-radius: var(--card-border-radius);
+     margin-top: 1rem;
+     cursor: pointer;
+     transition: all 0.3s ease;
+ }
+
+ .analyse>div.hover {
+     box-shadow: none;
+ }
+
+ .analyse>div .status {
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+ }
+
+ .analyse h3 {
+     margin-left: 0.6rem;
+     font-size: 1rem;
+
+ }
+
+ .analyse .progress {
+     position: relative;
+     width: 92px;
+     height: 92px;
+     border-radius: 50%;
+ }
+
+ .analyse svg {
+     width: 7rem;
+     height: 7rem;
+ }
+
+ .analyse svg circle {
+     fill: none;
+     stroke-width: 10;
+     stroke-linecap: round;
+     transform: translate(5px, 5px);
+ }
+
+ .analyse .users svg circle {
+     stroke: var(--color-info);
+     stroke-dashoffset: -30;
+     stroke-dasharray: 200;
+ }
+
+ .analyse .courses svg circle {
+     stroke: var(--color-danger);
+     stroke-dashoffset: -30;
+     stroke-dasharray: 200;
+ }
+
+ .analyse .enrollments svg circle {
+     stroke: var(--color-success);
+     stroke-dashoffset: -30;
+     stroke-dasharray: 200;
+ }
+
+
+ .analyse .posts svg circle {
+     stroke: var(--color-warning);
+     stroke-dashoffset: -30;
+     stroke-dasharray: 200;
+ }
+
+ .analyse .progress .percentage {
+     position: absolute;
+     top: -3px;
+     left: -1px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     height: 100%;
+     width: 100%;
+ }
+
+
+ /* --------- */
+
+ .new-users {
+     margin-top: 1.3rem;
+ }
+
+ .new-users .user-list {
+
+     padding: var(--card-padding);
+     border-radius: var(--card-border-radius);
+     margin-top: 1rem;
+
+     display: flex;
+     justify-content: space-around;
+     flex-wrap: wrap;
+     gap: 1.4rem;
+     cursor: pointer;
+     transition: all 0.3s ease;
+
+ }
+
+ .new-users .user-list:hover {
+     box-shadow: none;
+ }
+
+ .new-users .user-list .user {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: cneter;
+ }
+
+ .new-users .user-list .user img {
+     width: 5rem;
+     height: 5rem;
+     margin-bottom: 0.4rem;
+     border-radius: 50%;
+ }
+
+ /* --------- */
+
+ .recent-orders {
+     margin-top: 1.3rem;
+
+ }
+
+ .recent-orders h2 {
+     margin-bottom: 0.8rem;
+ }
+
+ .recent-orders div {
+
+     width: 100%;
+     padding: var(--card-padding);
+
+     border-radius: var(--card-border-radius);
+     transition: all 0.3s ease;
+
+ }
+
+ .recent-orders table {
+     width: 100%;
+     text-align: center;
+ }
+
+ .recent-orders div:hover {
+     box-shadow: none;
+ }
+
+ table tbody td {
+     height: 2.8rem;
+     /* border-bottom: 1px solid var(--color-light); */
+     color: var(--color-dark-variant);
+ }
+
+ table tbody tr:last-child td {
+     border: none;
+ }
+
+ .recent-orders a {
+     text-align: center;
+     display: block;
+     margin: 1rem auto;
+     color: var(--color-primary);
+
+ }
+
+
+ @media (max-width: 1200px) {
+     .analyse {
+         grid-template-columns: repeat(2, minmax(0, 1fr));
+         gap: 2rem;
+     }
+
+     .new-users .user-list .user {
+         flex-basis: 40%;
+     }
+
+     .recent-orders {
+         width: 94%;
+         position: absolute;
+         left: 50%;
+         transform: translateX(-50%);
+         margin: 2rem 0 0 0.8rem;
+     }
+
+     .recent-orders div {
+         width: 83vw;
+     }
+
+     .recent-orders div table thead tr th:last-child,
+     .recent-orders div table thead tr th:first-child {
+         display: none;
+     }
+
+     .recent-orders div table tbody tr td:last-child,
+     .recent-orders div table tbody tr td:first-child {
+         display: none;
+     }
+ }
+
+ @media (max-width: 768px) {
+     .analyse {
+         grid-template-columns: 1fr;
+         gap: 0;
+     }
+
+     .new-users .user-list .user {
+         flex-basis: 35%;
+     }
+
+     .recent-orders {
+         position: relative;
+         margin: 3rem 0 0 0;
+         width: 100%
+     }
+
+     .recent-orders div {
+         width: 100%;
+         margin: 0;
+     }
+ }

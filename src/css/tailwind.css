@@ -1,0 +1,40 @@
+@layer{
+body {
+    @apply w-screen h-screen font-poppins text-dark-400 dark:text-light text-[.88rem] select-none overflow-x-hidden   bg-[#f6f6f9] dark:bg-[#181a1e] 
+}
+
+
+ 
+input{
+    @apply transition-default bg-white dark:bg-dark-500 w-full shadowed-box
+
+} 
+
+
+.container {
+    display: grid;
+    scale: .95;
+    width: 100%;
+    margin: 0 auto;
+    gap: 1.8rem;
+    grid-template-columns: 12rem auto 23rem;
+}
+
+.container2 {
+    display: grid;
+    width: 96%;
+    margin: 0 auto;
+    gap: 1.8rem;
+    grid-template-columns: 12rem auto;
+}
+
+.transition-default {
+    transition: all 0.3s ease;
+}
+
+.shadowed-box{
+    @apply bg-[#fff] dark:bg-[#181a1e] shadow-gray-50 dark:shadow-gray-900
+}
+
+
+}
