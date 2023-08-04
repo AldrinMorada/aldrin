@@ -47,21 +47,9 @@ html {
     font-size: 14px;
 }
 
-/* body {
-    width: 100vw;
-    height: 100vh;
-    font-family: 'Poppins', sans-serif;
-    font-size: 0.88rem;
-    user-select: none;
-    overflow-x: hidden;
-    color: var(--color-dark);
-    background-color: var(--color-background);
-} */
-
 body {
-    @apply w-screen h-screen font-poppins text-dark-400 dark:text-light text-[.88rem] select-none overflow-x-hidden   bg-[#f6f6f9] dark:bg-[#181a1e] 
+    @apply w-screen h-screen font-poppins text-dark-400 dark:text-light text-[.88rem] select-none overflow-x-hidden   bg-[#f5f7f9] dark:bg-[#161a1e] 
 }
-
 
 a,
 b {
@@ -98,49 +86,24 @@ small {
     font-size: 0.76rem;
 }
 
-/* 
-
 main {
     margin-top: 1.4rem;
-} */
+}
 
 input {
-    background-color: var(--color-white);
     width: 100%;
-    box-shadow: var(--box-shadow);
     transition: all 0.3s ease;
+    @apply dark:text-white font-poppins
 }
 
-*/
-/* .text-muted {
-    color: var(--color-info-dark);
-}
-
-.primary {
-    color: var(--color-primary);
-} */
-
-/* } 
-.info {
-    color: var(--color-info);
-}  .danger {
-    color: var(--color-danger);
-} 
-.success {
-    color: var(--color-success);
-}
-
-.warning {
-    color: var(--color-warning);
-}
-
-*/ .container {
+.container {
     display: grid;
+    margin: 0  auto;
     width: 96%;
-    margin: 0 auto;
     gap: 1.8rem;
-    grid-template-columns: 12rem auto 23rem;
+    grid-template-columns: 12rem auto 20rem;
 }
+
 .container2 {
     display: grid;
     width: 96%;
@@ -153,32 +116,50 @@ input {
     transition: all 0.3s ease;
 }
 
+input{
+    @apply transition-default shadowed-box w-full
+} 
+
+input:hover,
+input:active{
+    box-shadow: none;
+} 
+
+.transition-default {
+    transition: all 0.3s ease;
+}
+
+.shadowed-box{
+    @apply transition-default bg-white dark:bg-[#1f2528] shadow-[0_2rem_3rem_rgba(132,139,200,0.18)] dark:shadow-[0_2rem_3rem_rgba(0,0,0,0.4)]
+}
+
+
+
+
 @media (max-width: 1200px) {
     .container {
         width: 95%;
-        scale: 1;
-        grid-template-columns: 7rem auto 23rem;
+        grid-template-columns: 7rem auto 18rem;
     }
 
-        .container2 {
-            width: 95%;
-            scale: 1;
-            grid-template-columns: 7rem auto;
-        }
+    .container2 {
+        width: 95%;
+        grid-template-columns: 7rem auto;
+    }
 }
+
+
 @media (max-width: 768px) {
     main {
         margin-top: 6rem;
         padding: 0 1rem;
-    
+    }
 
-        .container,
-        .container2 {
-            width: 100%;
-            scale: 1;
-            grid-template-columns: 1fr;
-            padding: 0 var(--padding-1);
-    
-        }
-        }
-        }
+    .container,
+    .container2 {
+        width: 100%;
+        grid-template-columns: 1fr;
+        padding: 0 var(--padding-1);
+
+    }
+}

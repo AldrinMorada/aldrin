@@ -11,7 +11,7 @@ const RightSection = ({ handleToggleSidebar }) => {
       <div className="nav">
         <button className="" id="menu-button">
           <span
-            className="material-icons-sharp"
+            className="material-icons-sharp dark:text-white hover:text-primary dark:hover:text-primary"
             onClick={() => handleToggleSidebar(true)}
           >
             menu

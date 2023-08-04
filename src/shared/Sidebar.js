@@ -18,9 +18,9 @@ const Sidebar = ({ sideBarToggle, handleToggleSidebar }) => {
               Aldrin<span className="danger">Pogi</span>
             </h2>
           </div>
-          <div className="close" id="close-btn">
+          <div className="close " id="close-btn">
             <span
-              className="material-icons-sharp"
+              className="material-icons-sharp hover:text-primary"
               onClick={() => handleToggleSidebar(false)}
             >
               close
@@ -29,42 +29,27 @@ const Sidebar = ({ sideBarToggle, handleToggleSidebar }) => {
         </div>
 
         <div className={` ${sideBarToggle ? "" : "shadowed-box"} sidebar pt-4`}>
-          <NavLink
-            to="/admin/analytics"
-            className="active:bg-shadow-light dark:active:bg-dark-500"
-          >
+          <NavLink to="/admin/analytics">
             <span className="material-icons-sharp">insights</span>
             <h3>Analytics</h3>
           </NavLink>
 
-          <NavLink
-            to="/admin/home"
-            className="active:bg-shadow-light dark:active:bg-dark-500"
-          >
+          <NavLink to="/admin/home">
             <span className="material-icons-sharp">home</span>
             <h3>Home</h3>
           </NavLink>
 
-          <NavLink
-            to="/admin/users"
-            className="active:bg-shadow-light dark:active:bg-dark-500"
-          >
+          <NavLink to="/admin/users">
             <span className="material-icons-sharp">person_outline</span>
             <h3>Users</h3>
           </NavLink>
 
-          <NavLink
-            to="/admin/trainingbonds"
-            className="active:bg-shadow-light dark:active:bg-dark-500"
-          >
+          <NavLink to="/admin/trainingbonds">
             <span className="material-icons-sharp">handshake</span>
             <h3>Bonds</h3>
           </NavLink>
 
-          <NavLink
-            to="/admin/test"
-            className="active:bg-shadow-light dark:active:bg-dark-500"
-          >
+          <NavLink to="/admin/test">
             <span className="material-icons-sharp">report_gmailerrorred</span>
             <h3>Test</h3>
           </NavLink>

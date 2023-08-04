@@ -12,27 +12,27 @@ module.exports = {
         dark: "0 2rem 3rem rgba(0, 0, 0, 0.4)",
       },
       colors: {
-        primary: "",
+        primary: "#a12219",
         muted: "#7d8da1",
         info: {
-          light: "",
+          light: "#89afd8",
           DEFAULT: "#6c9bcf",
-          dark: "",
+          dark: "#567ca5",
         },
         warning: {
-          light: "",
+          light: "#f8d97f",
           DEFAULT: "#f7d060",
-          dark: "",
+          dark: "#debb56",
         },
         success: {
-          light: "",
+          light: "#48af9d",
           DEFAULT: "#1b9c85",
-          dark: "",
+          dark: "#157c6a",
         },
         danger: {
-          light: "",
+          light: "#ff327f",
           DEFAULT: "#ff0060",
-          dark: "",
+          dark: "#cc004c",
         },
         dark: {
           100: "#a3bdcc",

@@ -9,7 +9,7 @@ import Add from "../shared/images/icons/add.png";
 
 import "../css/analytics.css";
 import { Link } from "react-router-dom";
-import Layout2 from "../shared/Layout";
+import Layout from "../shared/Layout";
 
 const Analytics = () => {
   const bondRequests = [
@@ -43,7 +43,7 @@ const Analytics = () => {
   ];
 
   return (
-    <Layout2>
+    <Layout>
       <h1>Analytics</h1>
       <div className="analyse">
         <div className="shadowed-box users">
@@ -173,22 +173,30 @@ const Analytics = () => {
               {bondRequests?.map((bond, index) => (
                 <React.Fragment key={index}>
                   <tr>
-                    <td>{bond.bondId}</td>
-                    <td>{bond.courseTitle}</td>
-                    <td>{bond.requestedBy}</td>
-                    <td>{bond.requestedBy}</td>
+                    <td className="text-[#677483] dark:text-[#a3bdcc]">
+                      {bond.bondId}
+                    </td>
+                    <td className="text-[#677483] dark:text-[#a3bdcc]">
+                      {bond.courseTitle}
+                    </td>
+                    <td className="text-[#677483] dark:text-[#a3bdcc]">
+                      {bond.requestedBy}
+                    </td>
+                    <td className="text-[#677483] dark:text-[#a3bdcc]">
+                      {bond.requestedBy}
+                    </td>
                     <td
                       className={
                         bond.status === "Declined"
-                          ? "danger"
+                          ? "text-danger"
                           : bond.status === "Pending"
-                          ? "warning"
-                          : "success"
+                          ? "text-warning"
+                          : "text-success"
                       }
                     >
                       {bond.status}
                     </td>
-                    <td className="info hover:underline cursor-pointer">
+                    <td className="text-info hover:underline cursor-pointer">
                       Details
                     </td>
                   </tr>
@@ -201,7 +209,7 @@ const Analytics = () => {
         <Link to="/admin/trainingbonds">Show All</Link>
       </div>
       {/* end of recent orders */}
-    </Layout2>
+    </Layout>
   );
 };
 

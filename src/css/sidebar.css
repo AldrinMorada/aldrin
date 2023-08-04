@@ -65,7 +65,7 @@ aside .sidebar a.active {
     width: 100%;
     color: var(--color-primary);
     margin-left: 0;
-    @apply bg-shadow-light dark:bg-dark-500
+    @apply bg-[rgba(132,139,200,0.18)] dark:bg-[#00000066]
 }
 
 aside .sidebar a.active::before {

@@ -10,7 +10,7 @@ const Layout = ({ children }) => {
   };
 
   return (
-    <div className="container">
+    <div className="container lg:scale-95">
       <Sidebar
         sideBarToggle={sideBarToggle}
         handleToggleSidebar={handleToggleSidebar}

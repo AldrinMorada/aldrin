@@ -9,7 +9,7 @@ const TrainingBonds = () => {
       bondId: 1,
       requestedBy: "John Doe",
       courseTitle: "Introduction to React",
-      cost: 50,
+      cost: "P500,000",
       duration: "3 months",
       requestDate: "2023-07-01",
       status: "Pending",
@@ -18,7 +18,7 @@ const TrainingBonds = () => {
       bondId: 2,
       requestedBy: "Jane Smith",
       courseTitle: "Advanced JavaScript",
-      cost: 80,
+      cost: "P800,000",
       duration: "4 months",
       requestDate: "2023-07-02",
       status: "Approved",
@@ -27,7 +27,7 @@ const TrainingBonds = () => {
       bondId: 3,
       requestedBy: "Michael Johnson",
       courseTitle: "CSS Basics",
-      cost: 30,
+      cost: "P300,000",
       duration: "2 months",
       requestDate: "2023-07-03",
       status: "Declined",
@@ -36,7 +36,7 @@ const TrainingBonds = () => {
       bondId: 4,
       requestedBy: "Emily Davis",
       courseTitle: "Node.js Fundamentals",
-      cost: 60,
+      cost: "P600,000",
       duration: "3 months",
       requestDate: "2023-07-04",
       status: "Approved",
@@ -45,7 +45,7 @@ const TrainingBonds = () => {
       bondId: 5,
       requestedBy: "William Brown",
       courseTitle: "React Hooks in Depth",
-      cost: 70,
+      cost: "P700,000",
       duration: "4 months",
       requestDate: "2023-07-05",
       status: "Pending",
@@ -54,7 +54,7 @@ const TrainingBonds = () => {
       bondId: 6,
       requestedBy: "Olivia Wilson",
       courseTitle: "HTML5 and CSS3",
-      cost: 40,
+      cost: "P400,000",
       duration: "2 months",
       requestDate: "2023-07-06",
       status: "Approved",
@@ -63,7 +63,7 @@ const TrainingBonds = () => {
       bondId: 7,
       requestedBy: "James Johnson",
       courseTitle: "Responsive Web Design",
-      cost: 45,
+      cost: "P450,000",
       duration: "3 months",
       requestDate: "2023-07-07",
       status: "Pending",
@@ -72,7 +72,7 @@ const TrainingBonds = () => {
       bondId: 8,
       requestedBy: "Sophia Lee",
       courseTitle: "JavaScript ES6+",
-      cost: 55,
+      cost: "P550,000",
       duration: "3 months",
       requestDate: "2023-07-08",
       status: "Approved",
@@ -81,7 +81,7 @@ const TrainingBonds = () => {
       bondId: 9,
       requestedBy: "Liam Miller",
       courseTitle: "Introduction to Vue.js",
-      cost: 65,
+      cost: "P650,000",
       duration: "4 months",
       requestDate: "2023-07-09",
       status: "Declined",
@@ -90,7 +90,7 @@ const TrainingBonds = () => {
       bondId: 10,
       requestedBy: "Ava Anderson",
       courseTitle: "TypeScript Basics",
-      cost: 50,
+      cost: "P500,000",
       duration: "3 months",
       requestDate: "2023-07-10",
       status: "Approved",
@@ -131,50 +131,60 @@ const TrainingBonds = () => {
       </div>
 
       <div className="shadowed-box table-container">
-        <div>
-          <table>
-            <thead>
-              <tr>
-                <th>Bond Id</th>
-                <th>Requested By</th>
-                <th>Course Title</th>
-                <th>Cost</th>
-                <th>Duration</th>
-                <th>Request Date</th>
-                <th>Status</th>
-                <th>Actions</th>
-              </tr>
-            </thead>
-            <tbody>
-              {bondRequests?.map((bond, index) => (
-                <React.Fragment>
-                  <tr>
-                    <td>{bond.bondId}</td>
-                    <td>{bond.requestedBy}</td>
-                    <td>{bond.courseTitle}</td>
-                    <td>{bond.cost}</td>
-                    <td>{bond.duration}</td>
-                    <td>{bond.requestDate}</td>
-                    <td
-                      className={
-                        bond.status === "Declined"
-                          ? "danger"
-                          : bond.status === "Pending"
-                          ? "warning"
-                          : "success"
-                      }
-                    >
-                      {bond.status}
-                    </td>
-                    <td className="cursor-pointer">
-                      <span className="material-icons-sharp">more_vert</span>
-                    </td>
-                  </tr>
-                </React.Fragment>
-              ))}
-            </tbody>
-          </table>
-        </div>
+        <table>
+          <thead>
+            <tr>
+              <th>Bond Id</th>
+              <th>Requested By</th>
+              <th>Course Title</th>
+              <th>Cost</th>
+              <th>Duration</th>
+              <th>Request Date</th>
+              <th>Status</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+            {bondRequests?.map((bond, index) => (
+              <React.Fragment>
+                <tr>
+                  <td className="text-[#677483] dark:text-[#a3bdcc]">
+                    {bond.bondId}
+                  </td>
+                  <td className="text-[#677483] dark:text-[#a3bdcc]">
+                    {bond.requestedBy}
+                  </td>
+                  <td className="text-[#677483] dark:text-[#a3bdcc]">
+                    {bond.courseTitle}
+                  </td>
+                  <td className="text-[#677483] dark:text-[#a3bdcc]">
+                    {bond.cost}
+                  </td>
+                  <td className="text-[#677483] dark:text-[#a3bdcc]">
+                    {bond.duration}
+                  </td>
+                  <td className="text-[#677483] dark:text-[#a3bdcc]">
+                    {bond.requestDate}
+                  </td>
+                  <td
+                    className={
+                      bond.status === "Declined"
+                        ? "text-danger"
+                        : bond.status === "Pending"
+                        ? "text-warning"
+                        : "text-success"
+                    }
+                  >
+                    {bond.status}
+                  </td>
+                  <td className="cursor-pointer">
+                    <span className="material-icons-sharp">more_vert</span>
+                  </td>
+                </tr>
+              </React.Fragment>
+            ))}
+          </tbody>
+        </table>
       </div>
     </Layout2>
   );
