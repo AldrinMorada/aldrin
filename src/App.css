@@ -163,3 +163,37 @@ input:active{
 
     }
 }
+
+
+
+.Toastify__toast-body {
+    @apply font-poppins
+}
+
+.Toastify__toast-theme--dark {
+    background-color: #1f2528 !important;
+}
+
+.Toastify__toast-theme--light {
+    background-color: white !important;
+}
+
+.Toastify__toast-theme--colored.Toastify__toast--default {
+    @apply bg-white dark:bg-[#1f2528]
+}
+
+.Toastify__toast-theme--colored.Toastify__toast--info {
+    background-color: var(--color-info) !important;
+}
+.Toastify__toast-theme--colored.Toastify__toast--success {
+    background-color: var(--color-success) !important;
+
+}
+.Toastify__toast-theme--colored.Toastify__toast--warning {
+    background-color: var(--color-warning) !important;
+
+}
+.Toastify__toast-theme--colored.Toastify__toast--error {
+    background-color: var(--color-danger) !important;
+
+}

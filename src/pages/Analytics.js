@@ -1,15 +1,19 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 import Admin from "../shared/images/users/admin.png";
 import Approver from "../shared/images/users/approver.png";
 import Student from "../shared/images/users/student.png";
 import Manager from "../shared/images/users/manager.png";
 import Trainer from "../shared/images/users/trainer.png";
-import Add from "../shared/images/icons/add.png";
+// import Add from "../shared/images/icons/add.png";
 
 import "../css/analytics.css";
 import { Link } from "react-router-dom";
 import Layout from "../shared/Layout";
+import LearnerService from "../services/LearnerService";
+import CourseService from "../services/CourseService";
+import LearnerCourseService from "../services/LearnerCourseService";
+import PostService from "../services/PostService";
 
 const Analytics = () => {
   const bondRequests = [
@@ -42,6 +46,59 @@ const Analytics = () => {
     },
   ];
 
+  const [loading, setLoading] = useState(false);
+
+  const [learnersCount, setLearnersCount] = useState(0);
+  const [courseCount, setCourseCount] = useState(0);
+  const [enrollmentCount, setEnrollmentCount] = useState(0);
+  const [postCount, setPostCount] = useState(0);
+  const [rolesCount, setRolesCount] = useState(0);
+
+  const getAllLearnersCount = () => {
+    LearnerService.getAllLearnersCount().then((res) => {
+      setLearnersCount(res.data);
+    });
+  };
+
+  const getCoursesCount = () => {
+    CourseService.getAllCoursesCount().then((res) => {
+      setCourseCount(res.data);
+    });
+  };
+
+  const getAllEnrollmentCount = () => {
+    LearnerCourseService.getAllLearnerCoursesStat().then((res) => {
+      setEnrollmentCount(res.data);
+    });
+  };
+
+  const getAllPostCount = () => {
+    PostService.getAllPostCount().then((res) => {
+      setPostCount(res.data);
+    });
+  };
+
+  const getAllRolesCount = () => {
+    LearnerService.getAllLearnerRolesCount().then((res) => {
+      setRolesCount(res.data);
+    });
+  };
+
+  function getValueByType(array, targetType) {
+    const foundObject = array.find((obj) => obj.type === targetType);
+    return foundObject ? foundObject.value : null;
+  }
+
+  useEffect(() => {
+    setLoading(true);
+    getAllLearnersCount();
+    getCoursesCount();
+    getAllEnrollmentCount();
+    getAllPostCount();
+    getAllRolesCount();
+    setLoading(false);
+  }, []);
+
   return (
     <Layout>
       <h1>Analytics</h1>
@@ -49,8 +106,8 @@ const Analytics = () => {
         <div className="shadowed-box users">
           <div className="status">
             <div>
-              <h3>Total Users</h3>
-              <h1>69,420</h1>
+              <h3>Users</h3>
+              <h1>{learnersCount}</h1>
             </div>
 
             <div className="progress">
@@ -66,7 +123,7 @@ const Analytics = () => {
           <div className="status">
             <div>
               <h3>Courses</h3>
-              <h1>20,432</h1>
+              <h1>{courseCount}</h1>
             </div>
 
             <div className="progress">
@@ -82,7 +139,7 @@ const Analytics = () => {
           <div className="status">
             <div>
               <h3>Enrollments</h3>
-              <h1>42,069</h1>
+              <h1>{enrollmentCount ? enrollmentCount.length : 0}</h1>
             </div>
 
             <div className="progress">
@@ -98,7 +155,7 @@ const Analytics = () => {
           <div className="status">
             <div>
               <h3>Posts</h3>
-              <h1>12,345</h1>
+              <h1>{postCount}</h1>
             </div>
 
             <div className="progress">
@@ -118,30 +175,30 @@ const Analytics = () => {
         <div className="shadowed-box user-list">
           <div className="user">
             <img src={Admin} alt="" />
-            <h2>1388</h2>
+            <h2>{rolesCount && getValueByType(rolesCount, "ROLE_ADMIN")}</h2>
             <p>Admins</p>
           </div>
           <div className="user">
             <img src={Manager} alt="" />
-            <h2>6244</h2>
+            <h2>{rolesCount && getValueByType(rolesCount, "ROLE_MANAGER")}</h2>
             <p>Managers</p>
           </div>
 
           <div className="user">
             <img src={Approver} alt="" />
-            <h2>4165</h2>
+            <h2>{rolesCount && getValueByType(rolesCount, "ROLE_APPROVER")}</h2>
             <p>Approvers</p>
           </div>
 
           <div className="user">
             <img src={Trainer} alt="" />
-            <h2>11382</h2>
+            <h2>{rolesCount && getValueByType(rolesCount, "ROLE_TRAINER")}</h2>
             <p>Trainers</p>
           </div>
 
           <div className="user">
             <img src={Student} alt="" />
-            <h2>45528</h2>
+            <h2>{rolesCount && getValueByType(rolesCount, "ROLE_LEARNER")}</h2>
             <p>Learners</p>
           </div>
 
