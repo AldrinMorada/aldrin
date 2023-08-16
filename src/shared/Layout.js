@@ -12,7 +12,7 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <div className="container lg:scale-95">
+      <div className="container">
         <Sidebar
           sideBarToggle={sideBarToggle}
           handleToggleSidebar={handleToggleSidebar}
@@ -20,7 +20,6 @@ const Layout = ({ children }) => {
         <main>{children}</main>
         <RightSection handleToggleSidebar={handleToggleSidebar} />
       </div>
-
     </>
   );
 };

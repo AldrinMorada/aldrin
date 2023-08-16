@@ -4,7 +4,10 @@ import { Button } from "../components/Button";
 import { toast } from "react-toastify";
 
 import FadeLoader from "../shared/animations/loader/FadeLoader.tsx";
+import HashLoader from "../shared/animations/loader/HashLoader.tsx";
+import ClipLoader from "../shared/animations/loader/ClipLoader.tsx";
 import "react-toastify/dist/ReactToastify.css";
+import Stepper from "../components/Stepper";
 
 const Test = () => {
   const notify = () => {
@@ -47,7 +50,9 @@ const Test = () => {
     <Layout>
       <h1>Test Page</h1>
       <div className="flex justify-center items-center gap-5 mt-5 w-full h-full">
-        <Button variant={"success"} onClick={notify}>
+        <Stepper />
+
+        {/* <Button variant={"success"} onClick={notify}>
           Notify
         </Button>
 
@@ -58,6 +63,22 @@ const Test = () => {
           aria-label="Loading Spinner"
           data-testid="loader"
         />
+
+        <ClipLoader
+          color={"#a12219"}
+          loading={true}
+          size={20}
+          aria-label="Loading Spinner"
+          data-testid="loader"
+        />
+
+        <HashLoader
+          color={"#a12219"}
+          loading={true}
+          size={20}
+          aria-label="Loading Spinner"
+          data-testid="loader"
+        /> */}
       </div>
     </Layout>
   );
