@@ -1,14 +1,20 @@
 import React, { useState } from "react";
-import "../css/stepper.css";
+import "../css/stepper2.css";
 import { TiTick } from "react-icons/ti";
 import { Button } from "./Button";
 const Stepper = () => {
-  const steps = ["Manager Decision", "Admin Decision", "Approver Decision"];
+  const steps = ["Manager", "Admin", "Approver"];
   const [currentStep, setCurrentStep] = useState(1);
   const [complete, setComplete] = useState(false);
   return (
-    <div className="flex flex-col gap-5">
-      <div className="flex justify-between">
+    <div
+      // className="flex flex-col gap-5"
+      style={{ display: "flex", flexDirection: "column", gap: "1.25rem" }}
+    >
+      <div
+        // className="flex justify-between"
+        style={{ display: "flex", justifyContent: "space-between" }}
+      >
         {steps?.map((step, i) => (
           <div
             key={i}

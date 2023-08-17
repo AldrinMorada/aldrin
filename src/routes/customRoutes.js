@@ -11,7 +11,7 @@ import Test from "../pages/Test";
 const route = () => {
   return (
     <Routes>
-      <Route path="/" element={<Navigate to="/admin/analytics" />} />
+      <Route path="/" element={<Navigate to="/admin/test" />} />
       <Route path="/admin">
         <Route index element={<Navigate to="analytics" />} />
         <Route path="analytics" element={<Analytics />} />

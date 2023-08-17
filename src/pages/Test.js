@@ -1,13 +1,13 @@
 import React, { useState } from "react";
 import Layout from "../shared/Layout";
-import { Button } from "../components/Button";
 import { toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import Stepper from "../components/Stepper";
 
+import { Button } from "../components/Button";
 import FadeLoader from "../shared/animations/loader/FadeLoader.tsx";
 import HashLoader from "../shared/animations/loader/HashLoader.tsx";
 import ClipLoader from "../shared/animations/loader/ClipLoader.tsx";
-import "react-toastify/dist/ReactToastify.css";
-import Stepper from "../components/Stepper";
 
 const Test = () => {
   const notify = () => {
@@ -52,7 +52,8 @@ const Test = () => {
       <div className="flex justify-center items-center gap-5 mt-5 w-full h-full">
         <Stepper />
 
-        {/* <Button variant={"success"} onClick={notify}>
+        {/*
+         <Button variant={"success"} onClick={notify}>
           Notify
         </Button>
 
