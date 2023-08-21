@@ -5,16 +5,16 @@ import Darkmode from "./Darkmode";
 
 import "../css/rightsection.css";
 
-const RightSection = ({ handleToggleSidebar }) => {
+const RightSection = ({ handleToggleSidebar, sidebar }) => {
   return (
     <div className="right-section">
       <div className="nav">
         <button className="" id="menu-button">
           <span
-            className="material-icons-sharp dark:text-white hover:text-primary dark:hover:text-primary"
+            className="material-icons-sharp hover:text-white"
             onClick={() => handleToggleSidebar(true)}
           >
-            menu
+            {sidebar ? "close" : "menu"}
           </span>
         </button>
 
