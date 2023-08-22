@@ -49,37 +49,64 @@ const Test = () => {
   return (
     <Layout>
       <h1>Test Page</h1>
-      <div className="flex justify-center items-center gap-5 mt-5 w-full h-full">
+      <div className="flex flex-col items-center gap-10 mt-5 w-full h-full">
         <Stepper />
 
-        {/*
-         <Button variant={"success"} onClick={notify}>
-          Notify
-        </Button>
+        <div className="flex justify-center items-center gap-5">
+          <Button variant={"success"} onClick={notify}>
+            Notify
+          </Button>
 
-        <FadeLoader
-          color={"#a12219"}
-          loading={true}
-          size={20}
-          aria-label="Loading Spinner"
-          data-testid="loader"
-        />
+          <Button variant={"danger"} onClick={notify}>
+            Notify
+          </Button>
 
-        <ClipLoader
-          color={"#a12219"}
-          loading={true}
-          size={20}
-          aria-label="Loading Spinner"
-          data-testid="loader"
-        />
+          <Button variant={"warning"} onClick={notify}>
+            Notify
+          </Button>
 
-        <HashLoader
-          color={"#a12219"}
-          loading={true}
-          size={20}
-          aria-label="Loading Spinner"
-          data-testid="loader"
-        /> */}
+          <Button variant={"muted"} className="cursor-not-allowed" disabled>
+            Notify
+          </Button>
+
+          <Button variant={"outline"} onClick={notify}>
+            Notify
+          </Button>
+
+          <Button variant={"subtle"} onClick={notify}>
+            Notify
+          </Button>
+
+          <Button variant={"ghost"} onClick={notify}>
+            Notify
+          </Button>
+        </div>
+
+        <div className="flex justify-center items-center gap-5">
+          <FadeLoader
+            color={"#a12219"}
+            loading={true}
+            size={20}
+            aria-label="Loading Spinner"
+            data-testid="loader"
+          />
+
+          <ClipLoader
+            color={"#a12219"}
+            loading={true}
+            size={20}
+            aria-label="Loading Spinner"
+            data-testid="loader"
+          />
+
+          <HashLoader
+            color={"#a12219"}
+            loading={true}
+            size={20}
+            aria-label="Loading Spinner"
+            data-testid="loader"
+          />
+        </div>
       </div>
     </Layout>
   );
