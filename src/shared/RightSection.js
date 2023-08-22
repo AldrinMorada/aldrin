@@ -4,6 +4,7 @@ import logo from "../shared/images/am.png";
 import Darkmode from "./Darkmode";
 
 import "../css/rightsection.css";
+import { Link } from "react-router-dom";
 
 const RightSection = ({ handleToggleSidebar, sidebar }) => {
   return (
@@ -27,9 +28,12 @@ const RightSection = ({ handleToggleSidebar, sidebar }) => {
             </p>
             <small className="text-muted">Admin</small>
           </div>
-          <div className="profile-photo">
-            <img src={Aldrin} alt="" />
-          </div>
+
+          <Link to={"/profile"}>
+            <div className="profile-photo">
+              <img src={Aldrin} alt="" />
+            </div>
+          </Link>
         </div>
       </div>
 

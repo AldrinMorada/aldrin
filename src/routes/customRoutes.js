@@ -7,6 +7,7 @@ import Users from "../pages/Users";
 import TrainingBonds from "../pages/Trainingbonds";
 import AdminHome from "../pages/AdminHome";
 import Test from "../pages/Test";
+import Profile from "../pages/Profile";
 
 const route = () => {
   return (
@@ -21,6 +22,7 @@ const route = () => {
         <Route path="settings" element={<Settings />} />
         <Route path="test" element={<Test />} />
       </Route>
+      <Route path="/profile" element={<Profile />} />
     </Routes>
   );
 };
