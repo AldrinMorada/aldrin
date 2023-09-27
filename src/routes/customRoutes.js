@@ -8,11 +8,13 @@ import TrainingBonds from "../pages/Trainingbonds";
 import AdminHome from "../pages/AdminHome";
 import Test from "../pages/Test";
 import Profile from "../pages/Profile";
+import Component from "../Component";
 
 const route = () => {
   return (
     <Routes>
       <Route path="/" element={<Navigate to="/admin/test" />} />
+      <Route path="/sample_path" element={<Component/>} />
       <Route path="/admin">
         <Route index element={<Navigate to="analytics" />} />
         <Route path="analytics" element={<Analytics />} />

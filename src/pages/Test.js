@@ -46,12 +46,14 @@ const Test = () => {
       className: "foo-bar",
     });
   };
+
   return (
     <Layout>
       <h1>Test Page</h1>
-      <div className="flex flex-col items-center gap-10 mt-5 w-full h-full">
-        <Stepper />
-
+      <div className={`flex flex-col items-center gap-10 mt-5 w-full h-full`}>
+        {/* <Stepper /> */}
+        {/* 
+            ----- buttons -----
         <div className="flex justify-center items-center gap-5">
           <Button variant={"success"} onClick={notify}>
             Notify
@@ -81,15 +83,16 @@ const Test = () => {
             Notify
           </Button>
         </div>
-
+        */}
         <div className="flex justify-center items-center gap-5">
+          {/*  fadeloader size not editable?
           <FadeLoader
             color={"#a12219"}
             loading={true}
             size={20}
             aria-label="Loading Spinner"
             data-testid="loader"
-          />
+          /> */}
 
           <ClipLoader
             color={"#a12219"}

@@ -197,8 +197,3 @@ input:active{
     background-color: var(--color-danger) !important;
 
 }
-
-
-.Toastify__toast-icon.Toastify--animate-icon.Toastify__zoom-enter svg {
-    fill: white !important;
-}
