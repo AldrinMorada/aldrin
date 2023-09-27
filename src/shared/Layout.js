@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import Sidebar from "./Sidebar";
 import RightSection from "./RightSection";
 
-
 const Layout = ({ children }) => {
   const [sideBarToggle, setSidebarToggle] = useState(false);
 
@@ -11,16 +10,14 @@ const Layout = ({ children }) => {
   };
 
   return (
-    <>
-      <div className="container">
-        <Sidebar
-          sideBarToggle={sideBarToggle}
-          handleToggleSidebar={handleToggleSidebar}
-        />
-        <main>{children}</main>
-        <RightSection handleToggleSidebar={handleToggleSidebar} />
-      </div>
-    </>
+    <div className="container">
+      <Sidebar
+        sideBarToggle={sideBarToggle}
+        handleToggleSidebar={handleToggleSidebar}
+      />
+      <main>{children}</main>
+      <RightSection handleToggleSidebar={handleToggleSidebar} />
+    </div>
   );
 };
 
