@@ -6,7 +6,7 @@ const AdminHome = () => {
   return (
     <Layout>
       <div className="bg-gray-200 mt-4">
-        <div className="h-[520px] w-full overflow-hidden relative">
+        <div className="h-[350px] w-full overflow-hidden relative">
           <section className="px-20 py-12 z-[20] relative">
             <h1 className="text-white tracking-wider">Home</h1>
           </section>
@@ -43,7 +43,7 @@ const AdminHome = () => {
           </section>
         </div>
 
-        <div className="absolute h-[520px] bg-primary/40"></div>
+        <div className="absolute h-[350px] bg-primary/40"></div>
       </div>
     </Layout>
   );
