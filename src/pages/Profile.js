@@ -12,7 +12,11 @@ const Profile = () => {
         <section className="absolute">
           <div className="pl-[3.5rem] flex">
             <div className="w-48 h-48 rounded-full overflow-hidden border-solid border-[6px] border-[#f5f7f9] dark:border-[#161a1e] -mt-24">
-              <img src={Aldrin} alt="p" className="h-full w-full" />
+              <img
+                src={Aldrin}
+                alt="p"
+                className="h-full w-full object-cover"
+              />
 
               <div className="flex justify-center items-center absolute w-12 h-12 z-[5] -mt-16 ml-[8.5rem] rounded-full bg-[#f5f7f9] dark:bg-[#161a1e] ">
                 <span class="material-icons-sharp">photo_camera</span>
@@ -21,7 +25,9 @@ const Profile = () => {
 
             <div className="pl-4 pt-4">
               <span className="font-bold text-2xl">Aldrin Morada</span>
-              <h3 className="text-gray-600">Admin / Learner</h3>
+              <h3 className="text-gray-600 dark:text-gray-200">
+                Admin / Learner
+              </h3>
             </div>
           </div>
         </section>
