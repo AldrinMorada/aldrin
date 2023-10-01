@@ -14,11 +14,15 @@ const route = () => {
   return (
     <Routes>
       <Route path="/" element={<Navigate to="/admin/test" />} />
-      <Route path="/sample_path" element={<Component/>} />
+      <Route path="/sample_path" element={<Component />} />
       <Route path="/admin">
         <Route index element={<Navigate to="analytics" />} />
         <Route path="analytics" element={<Analytics />} />
         <Route path="home" element={<AdminHome />} />
+        <Route path="forums" element={<AdminHome />} />
+        <Route path="courses" element={<AdminHome />} />
+        <Route path="leaderboards" element={<AdminHome />} />
+        <Route path="dashboard" element={<AdminHome />} />
         <Route path="users" element={<Users />} />
         <Route path="trainingbonds" element={<TrainingBonds />} />
         <Route path="settings" element={<Settings />} />

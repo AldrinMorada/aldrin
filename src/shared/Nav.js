@@ -1,6 +1,5 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import Aldrin from "../shared/images/users/aldrin.jpg";
-import logo from "../shared/images/am.png";
 import "../css/rightsection.css";
 import Darkmode from "./Darkmode";
 

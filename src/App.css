@@ -96,6 +96,7 @@ input {
     @apply dark:text-white font-poppins;
 }
 
+
 .container {
     display: grid;
     margin: 0 auto;
