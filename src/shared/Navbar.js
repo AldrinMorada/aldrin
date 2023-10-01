@@ -7,7 +7,7 @@ import Darkmode from "./Darkmode";
 
 const Navbar = () => {
   return (
-    <nav className="top-0 sticky h-[6vh] bg-[#f5f7f9] dark:bg-[#161a1e] w-full shadow-lg flex justify-between items-center px-12 z-10">
+    <nav className="navbar">
       <section className="flex gap-2">
         <img src={logo} className="w-[2rem] h-[2rem]" alt="" />
         <span className="font-bold text-xl tracking-wide">
@@ -15,22 +15,12 @@ const Navbar = () => {
         </span>
       </section>
 
-      <section className="nav-container flex justify-center items-center gap-12 h-full">
-        <NavLink className="text-black dark:text-white" to="/home">
-          Home
-        </NavLink>
-        <NavLink className="text-black dark:text-white" to="/forums">
-          Forums
-        </NavLink>
-        <NavLink className="text-black dark:text-white" to="/courses">
-          Courses
-        </NavLink>
-        <NavLink className="text-black dark:text-white" to="/leaderboards">
-          Leaderboards
-        </NavLink>
-        <NavLink className="text-black dark:text-white" to="/admin">
-          Dashboard
-        </NavLink>
+      <section className="nav-links">
+        <NavLink to="/home">Home</NavLink>
+        <NavLink to="/forums">Forums</NavLink>
+        <NavLink to="/courses">Courses</NavLink>
+        <NavLink to="/leaderboards">Leaderboards</NavLink>
+        <NavLink to="/admin">Dashboard</NavLink>
       </section>
 
       <section>

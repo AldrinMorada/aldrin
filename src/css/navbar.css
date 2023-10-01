@@ -1,14 +1,21 @@
-.nav-container a {
+.navbar{
+  @apply  top-0 sticky  h-[clamp(4rem,5rem+1vh,6vh)] bg-[#f5f7f9] dark:bg-[#161a1e] w-full shadow-lg flex justify-between items-center px-12 z-10
+}
+.nav-links{
+    @apply flex justify-center items-center gap-12 h-full
+}
+
+.nav-links a {
     letter-spacing: 0.05em;
     font-weight: 700;
     font-size: 1.25rem;
     line-height: 1.75rem;
     text-decoration: none;
     position: relative;
-    color: black;
+    @apply text-black dark:text-white
 }
 
-.nav-container a::before {
+.nav-links a::before {
     content: "";
     position: absolute;
     width: 0;
@@ -20,13 +27,13 @@
     transition: width 0.3s ease;
 }
 
-.nav-container a:hover,
-.nav-container a.active {
+.nav-links a:hover,
+.nav-links a.active {
     color: var(--color-primary) !important;
 }
 
-.nav-container  a:hover::before,
-.nav-container  a.active::before {
+.nav-links  a:hover::before,
+.nav-links  a.active::before {
     width: 100%;
     background-color: var(--color-primary) !important;
 }
