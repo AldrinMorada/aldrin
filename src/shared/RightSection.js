@@ -19,8 +19,8 @@ const RightSection = ({ handleToggleSidebar, sidebar }) => {
           </span>
         </button>
 
-        <Darkmode />
-
+        {/* <Darkmode /> */}
+        {/* 
         <div className="profile">
           <div className="info">
             <p>
@@ -35,6 +35,7 @@ const RightSection = ({ handleToggleSidebar, sidebar }) => {
             </div>
           </Link>
         </div>
+         */}
       </div>
 
       {/* end of nav */}

@@ -1,0 +1,66 @@
+.nav-container a {
+    letter-spacing: 0.05em;
+    font-weight: 700;
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    text-decoration: none;
+    position: relative;
+    color: black;
+}
+
+.nav-container a::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: var(--color-primary) !important;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: width 0.3s ease;
+}
+
+.nav-container a:hover,
+.nav-container a.active {
+    color: var(--color-primary) !important;
+}
+
+.nav-container  a:hover::before,
+.nav-container  a.active::before {
+    width: 100%;
+    background-color: var(--color-primary) !important;
+}
+
+
+.profile-photo {
+    width: 2.8rem;
+    height: 2.8rem;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.dark-mode {
+    background-color: var(--color-light);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 1.6rem;
+    width: 4.2rem;
+    cursor: pointer;
+    border-radius: var(--border-radius-1);
+}
+
+.dark-mode span {
+    font-size: 1.2rem;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dark-mode span.active {
+    background-color: var(--color-primary);
+    color: white;
+    border-radius: var(--border-radius-1);
+}

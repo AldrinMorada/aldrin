@@ -6,7 +6,6 @@ aside .toggle {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-top: 1.4rem;
 }
 
 aside .toggle .logo {
@@ -54,18 +53,19 @@ aside .sidebar a span {
     font-size: 1.6rem;
     transition: all 0.3s ease;
 }
-
+/* 
 aside .sidebar a:last-child {
     position: absolute;
     bottom: 2rem;
     width: 100%;
-}
+} */
 
 aside .sidebar a.active {
     width: 100%;
     color: var(--color-primary);
     margin-left: 0;
-    @apply bg-[rgba(132,139,200,0.18)] dark:bg-[#00000066]
+    /* @apply bg-[rgba(132,139,200,0.18)] dark:bg-[#00000066] */
+    @apply bg-[#f5f7f9] dark:bg-[#161a1e]
 }
 
 aside .sidebar a.active::before {
@@ -109,10 +109,10 @@ aside .sidebar .message-count {
         width: 5.6rem;
     }
 
-    aside .sidebar a:last-child {
+    /* aside .sidebar a:last-child {
         position: relative;
         margin-top: 1.8rem;
-    }
+    } */
 
 }
 
@@ -149,10 +149,10 @@ aside .sidebar .message-count {
         height: 3.4rem;
     }
 
-    aside .sidebar a:last-child {
+    /* aside .sidebar a:last-child {
         position: absolute;
         bottom: 5rem;
-    }
+    } */
 
     aside .toggle .close {
         display: inline-block;

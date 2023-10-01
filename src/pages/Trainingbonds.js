@@ -1,7 +1,7 @@
 import React from "react";
 
 import "../css/table.css";
-import Layout2 from "../shared/Layout";
+import Layout from "../shared/Layout";
 
 const TrainingBonds = () => {
   const bondRequests = [
@@ -98,8 +98,8 @@ const TrainingBonds = () => {
   ];
 
   return (
-    <Layout2>
-      <h1>Training Bonds</h1>
+    <Layout>
+      {/* <h1>Training Bonds</h1> */}
 
       {/* search */}
       <div className="p-4 w-full flex justify-end">
@@ -186,7 +186,7 @@ const TrainingBonds = () => {
           </tbody>
         </table>
       </div>
-    </Layout2>
+    </Layout>
   );
 };
 

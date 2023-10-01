@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Sidebar from "./Sidebar";
 import RightSection from "./RightSection";
+import Navbar from "./Navbar";
 
 const Layout = ({ children }) => {
   const [sideBarToggle, setSidebarToggle] = useState(false);

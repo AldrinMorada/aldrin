@@ -101,7 +101,7 @@ const Analytics = () => {
 
   return (
     <Layout>
-      <h1>Analytics</h1>
+      {/* <h1>Analytics</h1> */}
       <div className="analyse">
         <div className="shadowed-box users">
           <div className="status">

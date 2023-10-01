@@ -7,7 +7,7 @@
  .analyse>div {
      padding: var(--card-padding);
      border-radius: var(--card-border-radius);
-     margin-top: 1rem;
+     /* margin-top: 1rem; */
      cursor: pointer;
      transition: all 0.3s ease;
  }

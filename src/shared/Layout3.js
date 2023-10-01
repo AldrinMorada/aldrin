@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import RightSection from "./RightSection2";
+import RightSection from "./RightSection";
 
 const Layout3 = ({ children }) => {
   const [sideBarToggle, setSidebarToggle] = useState(false);

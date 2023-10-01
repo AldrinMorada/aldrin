@@ -12,12 +12,12 @@ const Sidebar = ({ sideBarToggle, handleToggleSidebar }) => {
         } lg:block  `}
       >
         <div className="toggle">
-          <div className="logo">
+          {/* <div className="logo">
             <img src={logo} alt="" />
             <h2>
               Aldrin<span className="danger">Pogi</span>
             </h2>
-          </div>
+          </div> */}
           <div className="close " id="close-btn">
             <span
               className="material-icons-sharp hover:text-primary"
@@ -34,10 +34,10 @@ const Sidebar = ({ sideBarToggle, handleToggleSidebar }) => {
             <h3>Analytics</h3>
           </NavLink>
 
-          <NavLink to="/admin/home">
+          {/* <NavLink to="/admin/home">
             <span className="material-icons-sharp">home</span>
             <h3>Home</h3>
-          </NavLink>
+          </NavLink> */}
 
           <NavLink to="/admin/users">
             <span className="material-icons-sharp">person_outline</span>
@@ -85,10 +85,10 @@ const Sidebar = ({ sideBarToggle, handleToggleSidebar }) => {
             <h3>Sale List</h3>
           </a> */}
 
-          <Link to="/logout">
+          {/* <Link to="/logout">
             <span className="material-icons-sharp">logout</span>
             <h3>Logout</h3>
-          </Link>
+          </Link> */}
         </div>
       </aside>
     </div>
