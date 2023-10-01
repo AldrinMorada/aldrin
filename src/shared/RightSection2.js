@@ -6,7 +6,7 @@ import "../css/rightsection.css";
 const RightSection = ({ handleToggleSidebar, sidebar }) => {
   return (
     <div className="right-section">
-      <div className="shadowed-box user-profile ">
+      <div className="shadowed-box user-profile">
         <div className="logo">
           <img src={logo} alt="" />
           <h2>AldrinPogi</h2>
