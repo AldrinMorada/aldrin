@@ -1,8 +1,8 @@
-.navbar{
-  @apply  top-0 sticky  h-[clamp(4rem,5rem+1vh,6vh)] bg-[#f5f7f9] dark:bg-[#161a1e] w-full shadow-lg flex justify-between items-center px-12 z-10
+.navbar {
+    @apply top-0 sticky  h-[clamp(4rem,5rem+1vh,6vh)] bg-[#f5f7f9] dark:bg-[#161a1e] w-full shadow-lg flex justify-between items-center px-12 z-10;
 }
-.nav-links{
-    @apply flex justify-center items-center gap-12 h-full
+.nav-links {
+    @apply flex justify-center items-center gap-12 h-full;
 }
 
 .nav-links a {
@@ -12,7 +12,7 @@
     line-height: 1.75rem;
     text-decoration: none;
     position: relative;
-    @apply text-black dark:text-white
+    color: #716f6e;
 }
 
 .nav-links a::before {
@@ -32,12 +32,11 @@
     color: var(--color-primary) !important;
 }
 
-.nav-links  a:hover::before,
-.nav-links  a.active::before {
+.nav-links a:hover::before,
+.nav-links a.active::before {
     width: 100%;
     background-color: var(--color-primary) !important;
 }
-
 
 .profile-photo {
     width: 2.8rem;

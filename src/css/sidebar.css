@@ -41,7 +41,8 @@ aside .sidebar:hover {
 aside .sidebar a {
     display: flex;
     align-items: center;
-    color: var(--color-info-dark);
+    /* color: var(--color-info-dark); */
+    color: #716f6e;
     height: 3.7rem;
     gap: 1rem;
     position: relative;
