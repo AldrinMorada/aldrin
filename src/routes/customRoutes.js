@@ -15,12 +15,13 @@ const route = () => {
   return (
     <div className="mt-[1.4rem]">
       <Routes>
-        <Route path="/" element={<Navigate to="/admin/test" />} />
+        <Route path="/" element={<Navigate to="/home" />} />
         <Route path="/sample_path" element={<Component />} />
         <Route path="home" element={<AdminHome />} />
         <Route path="courses" element={<AdminHome />} />
         <Route path="leaderboards" element={<AdminHome />} />
         <Route path="forums" element={<AdminHome />} />
+
         <Route path="/admin">
           <Route index element={<Navigate to="test" />} />
           <Route path="analytics" element={<Analytics />} />

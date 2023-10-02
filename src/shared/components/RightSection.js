@@ -1,10 +1,7 @@
 import React from "react";
-import Aldrin from "../shared/images/users/aldrin.jpg";
-import logo from "../shared/images/am.png";
-import Darkmode from "./Darkmode";
+import Trophy from "../images/icons/rewards/diamond-trophy.png";
 
 import "../css/rightsection.css";
-import { Link } from "react-router-dom";
 
 const RightSection = ({ handleToggleSidebar, sidebar }) => {
   return (
@@ -18,33 +15,13 @@ const RightSection = ({ handleToggleSidebar, sidebar }) => {
             {sidebar ? "close" : "menu"}
           </span>
         </button>
-
-        {/* <Darkmode /> */}
-        {/* 
-        <div className="profile">
-          <div className="info">
-            <p>
-              Hello <b>Aldrin</b>!
-            </p>
-            <small className="text-muted">Admin</small>
-          </div>
-
-          <Link to={"/profile"}>
-            <div className="profile-photo">
-              <img src={Aldrin} alt="" />
-            </div>
-          </Link>
-        </div>
-         */}
       </div>
-
-      {/* end of nav */}
 
       <div className="shadowed-box user-profile">
         <div className="logo">
-          <img src={logo} alt="" />
-          <h2>AldrinPogi</h2>
-          <p>Developer 1 - Java Fullstack</p>
+          <img src={Trophy} alt="" />
+          <h1 className="tracking-wider">Diamond III</h1>
+          {/* <p>Aldrin Morada</p> */}
         </div>
       </div>
 

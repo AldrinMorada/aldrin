@@ -1,12 +1,8 @@
 import React from "react";
-import Layout from "../shared/Layout";
+import Layout from "../shared/components/Layout";
 
 const AdminDash = () => {
-  return (
-    <Layout>
-      <h1>AdminDash</h1>
-    </Layout>
-  );
+  return <Layout></Layout>;
 };
 
 export default AdminDash;

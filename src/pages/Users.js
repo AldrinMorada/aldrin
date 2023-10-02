@@ -1,8 +1,8 @@
 import React from "react";
-import Layout from "../shared/Layout";
+import Layout from "../shared/components/Layout";
 
 const Users = () => {
-  return <Layout>{/* <h1>Users</h1> */}</Layout>;
+  return <Layout></Layout>;
 };
 
 export default Users;

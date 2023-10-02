@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Layout from "../shared/Layout";
+import Layout from "../shared/components/Layout";
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import Stepper from "../components/Stepper";
@@ -49,7 +49,6 @@ const Test = () => {
 
   return (
     <Layout>
-      {/* <h1>Test Page</h1> */}
       <div className={`flex flex-col items-center gap-10 mt-5 w-full h-full`}>
         {/* <Stepper /> */}
         {/* 

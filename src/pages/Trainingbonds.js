@@ -1,7 +1,7 @@
 import React from "react";
 
-import "../css/table.css";
-import Layout from "../shared/Layout";
+import "../shared/css/table.css";
+import Layout from "../shared/components/Layout";
 
 const TrainingBonds = () => {
   const bondRequests = [
@@ -99,8 +99,6 @@ const TrainingBonds = () => {
 
   return (
     <Layout>
-      {/* <h1>Training Bonds</h1> */}
-
       {/* search */}
       <div className="p-4 w-full flex justify-end">
         <label htmlFor="table-search" className="sr-only">

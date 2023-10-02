@@ -1,8 +1,8 @@
 import React from "react";
-import "../css/home-admin.css";
-import Layout from "../shared/Layout3";
+import "../shared/css/home-admin.css";
+import Layout from "../shared/components/Layout3";
 import Aldrin from "../shared/images/users/aldrin.jpg";
-import Background from "../shared/Background";
+import Background from "../shared/components/Background";
 
 const Profile = () => {
   return (

@@ -1,19 +1,20 @@
 import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
+
+import LearnerService from "../services/LearnerService";
+import CourseService from "../services/CourseService";
+import LearnerCourseService from "../services/LearnerCourseService";
+import PostService from "../services/PostService";
+
+import Layout from "../shared/components/Layout";
+
+import "../shared/css/analytics.css";
 
 import Admin from "../shared/images/users/admin.png";
 import Approver from "../shared/images/users/approver.png";
 import Student from "../shared/images/users/student.png";
 import Manager from "../shared/images/users/manager.png";
 import Trainer from "../shared/images/users/trainer.png";
-// import Add from "../shared/images/icons/add.png";
-
-import "../css/analytics.css";
-import { Link } from "react-router-dom";
-import Layout from "../shared/Layout";
-import LearnerService from "../services/LearnerService";
-import CourseService from "../services/CourseService";
-import LearnerCourseService from "../services/LearnerCourseService";
-import PostService from "../services/PostService";
 
 const Analytics = () => {
   const bondRequests = [
@@ -201,12 +202,6 @@ const Analytics = () => {
             <h2>{rolesCount && getValueByType(rolesCount, "ROLE_LEARNER")}</h2>
             <p>Learners</p>
           </div>
-
-          {/* <div className="user">
-            <img src={Add} alt="" />
-            <h2>More</h2>
-            <p>New User</p>
-          </div> */}
         </div>
       </div>
 
