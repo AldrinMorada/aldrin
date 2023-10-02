@@ -91,7 +91,8 @@ small {
 }
 
 main {
-    margin-top: 1.4rem;
+    /* margin-top: 1.4rem; */
+    padding-top: 1rem;
 }
 
 input {

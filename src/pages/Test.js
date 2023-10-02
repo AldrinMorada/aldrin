@@ -1,13 +1,14 @@
 import React, { useState } from "react";
 import Layout from "../shared/components/Layout";
 import { toast } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
-import Stepper from "../components/Stepper";
 
-import { Button } from "../components/Button";
+import Stepper from "../shared/components/Stepper.jsx";
+import { Button } from "../shared/components/Button";
 import FadeLoader from "../shared/animations/loader/FadeLoader.tsx";
 import HashLoader from "../shared/animations/loader/HashLoader.tsx";
 import ClipLoader from "../shared/animations/loader/ClipLoader.tsx";
+
+import "react-toastify/dist/ReactToastify.css";
 
 const Test = () => {
   const notify = () => {

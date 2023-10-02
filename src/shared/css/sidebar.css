@@ -29,7 +29,7 @@ aside .sidebar {
     border-radius: 15px;
     height: 88vh;
     position: relative;
-    top: 1.5rem;
+    /* top: 1.4rem; */
     transition: all 0.3s ease;
 
 }

@@ -54,7 +54,7 @@
     display: flex;
     justify-content: center;
     text-align: center;
-    margin-top: 1rem;
+    /* margin-top: 1rem; */
     padding: var(--card-padding);
     border-radius: var(--card-border-radius);
 
