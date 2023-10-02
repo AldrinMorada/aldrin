@@ -2,10 +2,29 @@ import React, { useState } from "react";
 import "../css/stepper.css";
 import { TiTick } from "react-icons/ti";
 import { Button } from "./Button";
+import { toast } from "react-toastify";
+import { useEffect } from "react";
 const Stepper = () => {
   const steps = ["Manager", "Admin", "Approver"];
   const [currentStep, setCurrentStep] = useState(1);
   const [complete, setComplete] = useState(false);
+
+  const notify = () => {
+    const theme = localStorage.getItem("theme");
+
+    toast.success("Training bond approved!", {
+      position: toast.POSITION.TOP_RIGHT,
+      theme: theme === "light" ? "colored" : "dark",
+      className: "text-success",
+    });
+  };
+
+  useEffect(() => {
+    if (complete) {
+      notify();
+    }
+  }, [complete]);
+
   return (
     <div className="flex flex-col gap-5">
       <div className="flex justify-between">

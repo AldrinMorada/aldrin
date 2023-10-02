@@ -128,7 +128,7 @@ const TrainingBonds = () => {
         </div>
       </div>
 
-      <div className="shadowed-box table-container">
+      <div className="shadowed-box p-4 table-container">
         <table>
           <thead>
             <tr>

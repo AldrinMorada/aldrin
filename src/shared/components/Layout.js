@@ -11,10 +11,12 @@ const Layout = ({ children }) => {
 
   return (
     <div className="container">
-      <Sidebar
-        sideBarToggle={sideBarToggle}
-        handleToggleSidebar={handleToggleSidebar}
-      />
+      <div>
+        <Sidebar
+          sideBarToggle={sideBarToggle}
+          handleToggleSidebar={handleToggleSidebar}
+        />
+      </div>
       <main>
         <div className="h-full overflow-y-auto">{children}</div>
       </main>

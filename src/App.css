@@ -1,106 +1,4 @@
 /* imports */
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-
-:root {
-    --color-primary: #a12219;
-    --color-info: #6c9bcf;
-    --color-danger: #ff0060;
-    --color-success: #1b9c85;
-    --color-warning: #f7d060;
-    --color-white: #fff;
-    --color-info-dark: #7d8da1;
-    --color-dark: #363949;
-    --color-light: rgba(132, 139, 200, 0.18);
-    --color-dark-variant: #677483;
-    --color-background: #f6f6f9;
-
-    --card-border-radius: 2rem;
-    --border-radius-1: 0.4rem;
-    --border-radius-2: 1.2rem;
-
-    --card-padding: 1.8rem;
-    --padding-1: 1.2rem;
-
-    --box-shadow: 0 2rem 3rem var(--color-light);
-}
-
-.dark-mode-variables {
-    --color-background: #181a1e;
-    --color-white: #202528;
-    --color-dark: #edeffd;
-    --color-dark-variant: #a3bdcc;
-    --color-light: rgba(0, 0, 0, 0.4);
-    --box-shadow: 0 2rem 3rem var(--color-light);
-}
-
-::-webkit-scrollbar {
-    display: none;
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    outline: 0;
-    appearance: 0;
-    border: 0;
-    text-decoration: none;
-    box-sizing: border-box;
-}
-
-html {
-    font-size: 14px;
-}
-
-body {
-    @apply w-screen h-screen font-poppins text-dark-400 dark:text-light text-[.88rem] select-none overflow-x-hidden   bg-[#f5f7f9] dark:bg-[#161a1e];
-}
-
-a,
-b {
-    @apply text-dark-500 dark:text-light;
-}
-
-svg,
-p {
-    @apply text-dark-300 dark:text-dark-100;
-}
-
-img {
-    display: block;
-    width: 100%;
-    object-fit: cover;
-}
-
-h1 {
-    font-weight: 800;
-    font-size: 1.8rem;
-}
-
-h2 {
-    font-weight: 600;
-    font-size: 1.4rem;
-}
-
-h3 {
-    font-weight: 500;
-    font-size: 0.87rem;
-}
-
-small {
-    font-size: 0.76rem;
-}
-
-main {
-    /* margin-top: 1.4rem; */
-    padding-top: 1rem;
-}
-
-input {
-    width: 100%;
-    transition: all 0.3s ease;
-    @apply dark:text-white font-poppins;
-}
-
 
 .container {
     display: grid;
@@ -127,21 +25,8 @@ input {
     transition: all 0.3s ease;
 }
 
-input {
-    @apply transition-default shadowed-box w-full;
-}
-
-input:hover,
-input:active {
-    box-shadow: none;
-}
-
-.transition-default {
-    transition: all 0.3s ease;
-}
-
 .shadowed-box {
-    @apply transition-default bg-white dark:bg-[#1f2528] shadow-[0_1rem_0.5rem_rgba(132,139,200,0.18)] dark:shadow-[0_1rem_0.5rem_rgba(0,0,0,0.4)];
+    @apply transition-default bg-white dark:bg-[#1f2528] shadow-[0_0.5rem_0.5rem_rgba(132,139,200,0.18)] dark:shadow-[0_0.5rem_0.5rem_rgba(0,0,0,0.4)];
 }
 
 @media (max-width: 1200px) {

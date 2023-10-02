@@ -1,6 +1,6 @@
 import React from "react";
 import "../shared/css/home-admin.css";
-import Layout from "../shared/components/Layout3";
+import Layout from "../shared/components/Layout2";
 import Aldrin from "../shared/images/users/aldrin.jpg";
 import Background from "../shared/components/Background";
 

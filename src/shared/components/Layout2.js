@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import RightSection from "./RightSection";
 
-const Layout3 = ({ children }) => {
+const Layout2 = ({ children }) => {
   const [sideBarToggle, setSidebarToggle] = useState(false);
 
   const handleToggleSidebar = (value) => {
@@ -20,4 +20,4 @@ const Layout3 = ({ children }) => {
   );
 };
 
-export default Layout3;
+export default Layout2;

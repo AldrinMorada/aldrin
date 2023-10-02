@@ -7,17 +7,6 @@ const RightSection = ({ handleToggleSidebar, sidebar }) => {
   return (
     <div className="right-section">
       <div className="fixed w-[280px]">
-        <section className="nav">
-          <button className="" id="menu-button">
-            <span
-              className="material-icons-sharp hover:text-white"
-              onClick={() => handleToggleSidebar(true)}
-            >
-              {sidebar ? "close" : "menu"}
-            </span>
-          </button>
-        </section>
-
         <section className="shadowed-box user-profile">
           <div className="logo">
             <img src={Trophy} alt="" />
