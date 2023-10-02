@@ -13,7 +13,7 @@ import AdminDash from "../pages/AdminDash";
 
 const route = () => {
   return (
-    <div className="mt-[1.4rem]">
+    <div className="mt-[calc(7vh+.5rem)]">
       <Routes>
         <Route path="/" element={<Navigate to="/home" />} />
         <Route path="/sample_path" element={<Component />} />

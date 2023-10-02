@@ -8,7 +8,7 @@ const Sidebar = ({ sideBarToggle, handleToggleSidebar }) => {
       <aside
         className={`${
           sideBarToggle ? "block bg-white dark:bg-[#181a1e]" : "hidden"
-        } lg:block  `}
+        } lg:block  fixed w-[170px]`}
       >
         <div className="toggle">
           <div className="close " id="close-btn">

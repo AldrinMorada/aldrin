@@ -15,7 +15,9 @@ const Layout = ({ children }) => {
         sideBarToggle={sideBarToggle}
         handleToggleSidebar={handleToggleSidebar}
       />
-      <main>{children}</main>
+      <main>
+        <div className="h-full overflow-y-auto">{children}</div>
+      </main>
       <RightSection handleToggleSidebar={handleToggleSidebar} />
     </div>
   );

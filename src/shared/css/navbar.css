@@ -1,13 +1,14 @@
 .navbar {
-    @apply top-0 sticky  h-[clamp(4rem,5rem+1vh,6vh)] bg-[#f5f7f9] dark:bg-[#161a1e] w-full shadow-lg flex justify-between items-center px-12 z-10;
+    @apply top-0 fixed  h-[clamp(4rem,5rem+1vh,6vh)] bg-[#f5f7f9] dark:bg-[#161a1e] w-full shadow-lg flex justify-between items-center px-12 z-10;
 }
 .nav-links {
     @apply flex justify-center items-center gap-12 h-full;
 }
 
 .nav-links a {
-    letter-spacing: 0.05em;
-    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.025em;
+    font-weight: 600;
     font-size: 1.25rem;
     line-height: 1.75rem;
     text-decoration: none;

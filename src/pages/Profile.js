@@ -7,7 +7,7 @@ import Background from "../shared/components/Background";
 const Profile = () => {
   return (
     <Layout>
-      <header className="overflow-y-auto shadowed-box rounded-md pb-5">
+      <div className="shadowed-box rounded-md pb-5">
         <Background />
         <section className="absolute">
           <div className="pl-[3.5rem] flex">
@@ -48,11 +48,11 @@ const Profile = () => {
             </div>
           </div>
         </section>
-      </header>
+      </div>
 
-      <main className="mt-4 p-6 shadowed-box">
+      <div className="mt-4 p-6 shadowed-box h-[300vh]">
         <div className="font-bold uppercase text-xl tracking-widest">about</div>
-      </main>
+      </div>
     </Layout>
   );
 };

@@ -33,6 +33,10 @@
     --box-shadow: 0 2rem 3rem var(--color-light);
 }
 
+::-webkit-scrollbar {
+    display: none;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -104,11 +108,9 @@ input {
     gap: 1.8rem;
     grid-template-columns: 12rem auto 20rem;
     max-height: 100vh;
-    overflow: hidden;
 }
 
 .container2 {
-    /* overflow: hidden; */
     display: grid;
     width: 96%;
     margin: 0 auto;
