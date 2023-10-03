@@ -11,7 +11,7 @@ const Layout = ({ children }) => {
 
   return (
     <div className="container">
-      <div>
+      <div className="hidden lg:flex">
         <Sidebar
           sideBarToggle={sideBarToggle}
           handleToggleSidebar={handleToggleSidebar}
@@ -20,7 +20,9 @@ const Layout = ({ children }) => {
       <main>
         <div className="h-full overflow-y-auto">{children}</div>
       </main>
-      <RightSection handleToggleSidebar={handleToggleSidebar} />
+      <div className="hidden lg:flex">
+        <RightSection handleToggleSidebar={handleToggleSidebar} />
+      </div>
     </div>
   );
 };

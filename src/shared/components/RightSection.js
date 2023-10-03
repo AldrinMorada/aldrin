@@ -5,13 +5,12 @@ import "../css/rightsection.css";
 
 const RightSection = ({ handleToggleSidebar, sidebar }) => {
   return (
-    <div className="right-section">
-      <div className="fixed w-[280px]">
+    <div className="right-section w-full">
+      <div className="fixed sm:w-[20rem] lg:w-[25rem]">
         <section className="shadowed-box user-profile">
           <div className="logo">
             <img src={Trophy} alt="" />
             <h1 className="tracking-wider">Diamond III</h1>
-            {/* <p>Aldrin Morada</p> */}
           </div>
         </section>
 

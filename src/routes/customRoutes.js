@@ -31,7 +31,17 @@ const route = () => {
           <Route path="settings" element={<Settings />} />
           <Route path="test" element={<Test />} />
         </Route>
-        <Route path="/profile" element={<Profile />} />
+
+        <Route path="/profile">
+          <Route index element={<Navigate to="about" />} />
+          <Route path="about" element={<Profile subpage="about" />} />
+          <Route path="posts" element={<Profile subpage="posts" />} />
+          <Route path="courses" element={<Profile subpage="courses" />} />
+          <Route
+            path="certificates"
+            element={<Profile subpage="certificates" />}
+          />
+        </Route>
       </Routes>
     </div>
   );

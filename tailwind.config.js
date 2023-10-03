@@ -12,7 +12,7 @@ module.exports = {
         dark: "0 2rem 3rem rgba(0, 0, 0, 0.4)",
       },
       colors: {
-        primary: "#a12219",
+        primary: "#ff0060",
         muted: "#7d8da1",
         info: {
           light: "#89afd8",
@@ -31,7 +31,7 @@ module.exports = {
         },
         danger: {
           light: "#ff327f",
-          DEFAULT: "#ff0060",
+          DEFAULT: "#a12219",
           dark: "#cc004c",
         },
         dark: {

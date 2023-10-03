@@ -1,0 +1,36 @@
+.profile-nav-links {
+    @apply flex gap-4 px-6;
+}
+
+.profile-nav-links a {
+    text-transform: uppercase;
+    letter-spacing: 0.025em;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.25rem;
+    text-decoration: none;
+    position: relative;
+}
+
+.profile-nav-links a::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: var(--color-primary) !important;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: width 0.3s ease;
+}
+
+.profile-nav-links a:hover,
+.profile-nav-links a.active {
+    color: var(--color-primary) !important;
+}
+
+.profile-nav-links a:hover::before,
+.profile-nav-links a.active::before {
+    width: 100%;
+    background-color: var(--color-primary) !important;
+}

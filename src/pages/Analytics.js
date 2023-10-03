@@ -91,13 +91,13 @@ const Analytics = () => {
   }
 
   useEffect(() => {
-    setLoading(true);
-    getAllLearnersCount();
-    getCoursesCount();
-    getAllEnrollmentCount();
-    getAllPostCount();
-    getAllRolesCount();
-    setLoading(false);
+    // setLoading(true);
+    // getAllLearnersCount();
+    // getCoursesCount();
+    // getAllEnrollmentCount();
+    // getAllPostCount();
+    // getAllRolesCount();
+    // setLoading(false);
   }, []);
 
   return (

@@ -11,7 +11,7 @@ const Navbar = () => {
       <section className="flex gap-2">
         <img src={logo} className="w-[2rem] h-[2rem]" alt="" />
         <span className="font-bold text-xl tracking-wide">
-          Aldrin <span className="text-danger">Pogi</span>
+          Aldrin <span className="text-primary">Pogi</span>
         </span>
       </section>
 
@@ -33,7 +33,7 @@ const Navbar = () => {
             </p>
           </div>
 
-          <Link to={"/profile"}>
+          <Link to={"/profile/about"}>
             <div className="profile-photo">
               <img src={Aldrin} alt="" />
             </div>

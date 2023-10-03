@@ -1,10 +1,11 @@
 import React from "react";
-import "../shared/css/home-admin.css";
+import "../shared/css/profile.css";
 import Layout from "../shared/components/Layout2";
 import Aldrin from "../shared/images/users/aldrin.jpg";
 import Background from "../shared/components/Background";
+import { NavLink } from "react-router-dom";
 
-const Profile = () => {
+const Profile = ({ subpage }) => {
   return (
     <Layout>
       <div className="shadowed-box rounded-md pb-5">
@@ -33,25 +34,27 @@ const Profile = () => {
         </section>
 
         <section className="mt-28">
-          <div className="flex gap-5 px-6">
-            <div className="cursor-pointer hover:underline hover:text-primary text-lg font-semibold tracking-wide text-primary underline underline-offset-4">
+          <div className="profile-nav-links">
+            <NavLink to="/profile/about">
               <h4>About</h4>
-            </div>
-            <div className="cursor-pointer hover:underline hover:text-primary text-lg font-semibold tracking-wide">
+            </NavLink>
+            <NavLink to="/profile/posts">
               <h4>Posts</h4>
-            </div>
-            <div className="cursor-pointer hover:underline hover:text-primary text-lg font-semibold tracking-wide">
+            </NavLink>
+            <NavLink to="/profile/courses">
               <h4>Courses</h4>
-            </div>
-            <div className="cursor-pointer hover:underline hover:text-primary text-lg font-semibold tracking-wide">
+            </NavLink>
+            <NavLink to="/profile/certificates">
               <h4>Certificates</h4>
-            </div>
+            </NavLink>
           </div>
         </section>
       </div>
 
-      <div className="mt-4 p-6 shadowed-box h-[300vh]">
-        <div className="font-bold uppercase text-xl tracking-widest">about</div>
+      <div className="mt-4 p-6 shadowed-box min-h-[50vh] mb-20 rounded-md">
+        <span className="font-bold uppercase text-xl tracking-wider">
+          {subpage}
+        </span>
       </div>
     </Layout>
   );
