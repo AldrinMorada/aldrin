@@ -4,8 +4,24 @@ import Layout from "../shared/components/Layout2";
 import Aldrin from "../shared/images/users/aldrin.jpg";
 import Background from "../shared/components/Background";
 import { NavLink } from "react-router-dom";
+import About from "../shared/components/Profile/About";
+import Posts from "../shared/components/Profile/Posts";
+import Courses from "../shared/components/Profile/Courses";
+import Certificates from "../shared/components/Profile/Certificates";
 
 const Profile = ({ subpage }) => {
+  const subDisplay = () => {
+    if (subpage === "about") {
+      return <About />;
+    } else if (subpage === "posts") {
+      return <Posts />;
+    } else if (subpage === "courses") {
+      return <Courses />;
+    } else {
+      return <Certificates />;
+    }
+  };
+
   return (
     <Layout>
       <div className="shadowed-box rounded-md pb-5">
@@ -33,21 +49,19 @@ const Profile = ({ subpage }) => {
           </div>
         </section>
 
-        <section className="mt-28">
-          <div className="profile-nav-links">
-            <NavLink to="/profile/about">
-              <h4>About</h4>
-            </NavLink>
-            <NavLink to="/profile/posts">
-              <h4>Posts</h4>
-            </NavLink>
-            <NavLink to="/profile/courses">
-              <h4>Courses</h4>
-            </NavLink>
-            <NavLink to="/profile/certificates">
-              <h4>Certificates</h4>
-            </NavLink>
-          </div>
+        <section className="profile-nav-links mt-28">
+          <NavLink to="/profile/about">
+            <h4>About</h4>
+          </NavLink>
+          <NavLink to="/profile/posts">
+            <h4>Posts</h4>
+          </NavLink>
+          <NavLink to="/profile/courses">
+            <h4>Courses</h4>
+          </NavLink>
+          <NavLink to="/profile/certificates">
+            <h4>Certificates</h4>
+          </NavLink>
         </section>
       </div>
 
@@ -55,6 +69,7 @@ const Profile = ({ subpage }) => {
         <span className="font-bold uppercase text-xl tracking-wider">
           {subpage}
         </span>
+        <div className="mt-2">{subDisplay()}</div>
       </div>
     </Layout>
   );

@@ -20,22 +20,22 @@
     position: absolute;
     width: 0;
     height: 2px;
-    background-color: var(--color-primary) !important;
     bottom: -5px;
     left: 50%;
     transform: translateX(-50%);
     transition: width 0.3s ease;
+    @apply text-danger dark:text-danger-light
 }
 
 .nav-links a:hover,
 .nav-links a.active {
-    color: var(--color-primary) !important;
+    @apply text-danger dark:text-danger-light
 }
 
 .nav-links a:hover::before,
 .nav-links a.active::before {
     width: 100%;
-    background-color: var(--color-primary) !important;
+    @apply bg-danger dark:bg-danger-light
 }
 
 .profile-photo {
