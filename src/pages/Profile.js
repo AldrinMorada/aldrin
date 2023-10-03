@@ -4,10 +4,10 @@ import Layout from "../shared/components/Layout2";
 import Aldrin from "../shared/images/users/aldrin.jpg";
 import Background from "../shared/components/Background";
 import { NavLink } from "react-router-dom";
-import About from "../shared/components/Profile/About";
-import Posts from "../shared/components/Profile/Posts";
-import Courses from "../shared/components/Profile/Courses";
-import Certificates from "../shared/components/Profile/Certificates";
+import About from "../shared/components/ProfilePage/About";
+import Posts from "../shared/components/ProfilePage/Posts";
+import Courses from "../shared/components/ProfilePage/Courses";
+import Certificates from "../shared/components/ProfilePage/Certificates";
 
 const Profile = ({ subpage }) => {
   const subDisplay = () => {
