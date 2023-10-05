@@ -27,7 +27,7 @@ const Profile = ({ subpage }) => {
       <div className="shadowed-box rounded-md pb-5">
         <Background />
         <section className="absolute">
-          <div className="pl-[3.5rem] flex">
+          <div className="pl-[2.5rem] flex">
             <div className="w-48 h-48 rounded-full overflow-hidden border-solid border-[6px] border-[#f5f7f9] dark:border-[#161a1e] -mt-24">
               <img
                 src={Aldrin}
@@ -35,7 +35,7 @@ const Profile = ({ subpage }) => {
                 className="h-full w-full object-cover"
               />
 
-              <div className="flex justify-center items-center absolute w-12 h-12 z-[5] -mt-16 ml-[8.5rem] rounded-full bg-[#f5f7f9] dark:bg-[#161a1e] ">
+              <div className="flex justify-center items-center absolute w-12 h-12 z-[5] -mt-16 ml-[8.5rem] rounded-full bg-[#f5f7f9] dark:bg-[#161a1e] cursor-pointer">
                 <span class="material-icons-sharp">photo_camera</span>
               </div>
             </div>
