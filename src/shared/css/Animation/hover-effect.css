@@ -1,0 +1,36 @@
+.hover-moving__border {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 0.125rem;
+    @apply shadow-[0_0.5rem_0.5rem_rgba(132,139,200,0.18)] dark:shadow-[0_0.5rem_0.5rem_rgba(0,0,0,0.4)];
+}
+
+.hover-moving__border:hover::before {
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 2000%;
+    background: linear-gradient(#ffd700, #d400d4);
+    animation: rotate 4s linear infinite;
+}
+
+.hover-moving__border::after {
+    content: "";
+    position: absolute;
+    inset: 1px;
+    border-radius: 0.125rem;
+    @apply bg-white dark:bg-[#1f2528];
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}

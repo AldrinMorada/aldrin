@@ -57,7 +57,7 @@ html {
 }
 
 body {
-    @apply w-screen h-screen font-poppins text-dark-400 dark:text-light text-[.88rem] select-none overflow-x-hidden   bg-[#f5f7f9] dark:bg-[#161a1e];
+    @apply w-screen h-screen font-poppins text-dark-400 dark:text-light text-[.88rem] select-none overflow-x-hidden bg-[#f5f7f9] dark:bg-[#161a1e];
 }
 
 a,
@@ -74,21 +74,6 @@ img {
     display: block;
     width: 100%;
     object-fit: cover;
-}
-
-h1 {
-    font-weight: 800;
-    font-size: 1.8rem;
-}
-
-h2 {
-    font-weight: 600;
-    font-size: 1.4rem;
-}
-
-h3 {
-    font-weight: 500;
-    font-size: 0.87rem;
 }
 
 small {

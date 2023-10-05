@@ -1,6 +1,6 @@
 import React from "react";
 import Layout from "../shared/components/Layout2";
-import "../shared/css/leaderboards.css";
+import "../shared/css/Animation/hover-effect.css";
 
 const Leaderboards = () => {
   return (
@@ -11,11 +11,11 @@ const Leaderboards = () => {
           ~ Leaderboards ~
         </h1>
 
-        <div className="w-full h-full grid gap-y-4 mt-6">
-          <div className="h-20 rounded-sm moving__border"></div>
-          <div className="rank__container"></div>
-          <div className="rank__container"></div>
-          <div className="rank__container"></div>
+        <div className="w-full h-full grid gap-y-4 mt-6 p-2">
+          <div className="hover-moving__border h-20"></div>
+          <div className="hover-moving__border h-20"></div>
+          <div className="hover-moving__border h-20"></div>
+          <div className="hover-moving__border h-20"></div>
         </div>
       </div>
     </Layout>
