@@ -5,7 +5,6 @@ aside {
 aside .toggle {
     display: flex;
     align-items: center;
-    justify-content: space-between;
 }
 
 aside .toggle .logo {
@@ -29,7 +28,6 @@ aside .sidebar {
     border-radius: 15px;
     height: 88vh;
     position: relative;
-    /* top: 1.4rem; */
     transition: all 0.3s ease;
 
 }
@@ -41,7 +39,6 @@ aside .sidebar:hover {
 aside .sidebar a {
     display: flex;
     align-items: center;
-    /* color: var(--color-info-dark); */
     color: #716f6e;
     height: 3.7rem;
     gap: 1rem;
@@ -54,18 +51,11 @@ aside .sidebar a span {
     font-size: 1.6rem;
     transition: all 0.3s ease;
 }
-/* 
-aside .sidebar a:last-child {
-    position: absolute;
-    bottom: 2rem;
-    width: 100%;
-} */
 
 aside .sidebar a.active {
     width: 100%;
     color: var(--color-primary);
     margin-left: 0;
-    /* @apply bg-[rgba(132,139,200,0.18)] dark:bg-[#00000066] */
     @apply bg-[#f5f7f9] dark:bg-[#161a1e]
 }
 
@@ -89,14 +79,6 @@ aside .sidebar a:hover span {
     margin-left: 0.6rem;
 }
 
-aside .sidebar .message-count {
-    background-color: var(--color-danger);
-    padding: 2px 6px;
-    color: var(--color-white);
-    font-size: 11px;
-    border-radius: var(--border-radius-1);
-}
-
 @media (max-width: 1200px) {
     aside .logo h2 {
         display: none;
@@ -110,11 +92,6 @@ aside .sidebar .message-count {
         width: 5.6rem;
     }
 
-    /* aside .sidebar a:last-child {
-        position: relative;
-        margin-top: 1.8rem;
-    } */
-
 }
 
 @media (max-width: 768px) {
@@ -123,7 +100,6 @@ aside .sidebar .message-count {
         width: 15rem;
         z-index: 3;
         height: 100vh;
-        left: -100%;
         animation: showMenu 0.4s ease forwards;
     }
 
@@ -149,11 +125,6 @@ aside .sidebar .message-count {
         width: 100%;
         height: 3.4rem;
     }
-
-    /* aside .sidebar a:last-child {
-        position: absolute;
-        bottom: 5rem;
-    } */
 
     aside .toggle .close {
         display: inline-block;
