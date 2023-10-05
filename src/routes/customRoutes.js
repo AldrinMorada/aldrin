@@ -10,6 +10,7 @@ import Test from "../pages/Test";
 import Profile from "../pages/Profile";
 import Component from "../Component";
 import AdminDash from "../pages/AdminDash";
+import Leaderboards from "../pages/Leaderboards";
 
 const route = () => {
   return (
@@ -18,9 +19,9 @@ const route = () => {
         <Route path="/" element={<Navigate to="/home" />} />
         <Route path="/sample_path" element={<Component />} />
         <Route path="home" element={<AdminHome />} />
-        <Route path="courses" element={<AdminHome />} />
-        <Route path="leaderboards" element={<AdminHome />} />
         <Route path="forums" element={<AdminHome />} />
+        <Route path="courses" element={<AdminHome />} />
+        <Route path="leaderboards" element={<Leaderboards />} />
 
         <Route path="/admin">
           <Route index element={<Navigate to="test" />} />
