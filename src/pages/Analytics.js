@@ -6,7 +6,7 @@ import CourseService from "../services/CourseService";
 import LearnerCourseService from "../services/LearnerCourseService";
 import PostService from "../services/PostService";
 
-import Layout from "../shared/components/Layout";
+import Layout from "../shared/Layout";
 
 import "../shared/css/analytics.css";
 

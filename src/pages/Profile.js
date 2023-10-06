@@ -1,13 +1,13 @@
 import React from "react";
 import "../shared/css/profile.css";
-import Layout from "../shared/components/Layout2";
+import Layout from "../shared/Layout2";
 import Aldrin from "../shared/images/users/aldrin.jpg";
-import Background from "../shared/components/Background";
+import Background from "../shared/Background";
 import { NavLink } from "react-router-dom";
-import About from "../shared/components/ProfilePage/About";
-import Posts from "../shared/components/ProfilePage/Posts";
-import Courses from "../shared/components/ProfilePage/Courses";
-import Certificates from "../shared/components/ProfilePage/Certificates";
+import About from "../components/ProfilePage/About";
+import Posts from "../components/ProfilePage/Posts";
+import Courses from "../components/ProfilePage/Courses";
+import Certificates from "../components/ProfilePage/Certificates";
 
 const Profile = ({ subpage }) => {
   const subDisplay = () => {

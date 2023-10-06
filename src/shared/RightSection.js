@@ -1,7 +1,6 @@
 import React from "react";
-import Trophy from "../images/icons/rewards/diamond-trophy.png";
-
-import "../css/rightsection.css";
+import Trophy from "./images/icons/rewards/diamond-trophy.png";
+import "./css/rightsection.css";
 
 const RightSection = () => {
   return (

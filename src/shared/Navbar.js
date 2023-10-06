@@ -1,8 +1,8 @@
 import React from "react";
 import { Link, NavLink } from "react-router-dom";
-import "../css/navbar.css";
-import logo from "../images/am.png";
-import Aldrin from "../images/users/aldrin.jpg";
+import "./css/navbar.css";
+import logo from "./images/am.png";
+import Aldrin from "./images/users/aldrin.jpg";
 import Darkmode from "./Darkmode";
 
 const Navbar = () => {

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "../css/stepper.css";
+import "./css/stepper.css";
 import { TiTick } from "react-icons/ti";
 import { Button } from "./Button";
 import { toast } from "react-toastify";
