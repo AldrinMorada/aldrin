@@ -3,25 +3,14 @@ import Sidebar from "./Sidebar";
 import RightSection from "./RightSection";
 
 const Layout = ({ children }) => {
-  const [sideBarToggle, setSidebarToggle] = useState(false);
-
-  const handleToggleSidebar = (value) => {
-    setSidebarToggle(value);
-  };
-
   return (
-    <div className="container">
-      <div className="hidden lg:flex">
-        <Sidebar
-          sideBarToggle={sideBarToggle}
-          handleToggleSidebar={handleToggleSidebar}
-        />
+    <div className="flex justify-between w-full">
+      <div className="hidden lg:flex w-[20%]">
+        <Sidebar />
       </div>
-      <main>
-        <div className="h-full overflow-y-auto">{children}</div>
-      </main>
-      <div className="hidden lg:flex">
-        <RightSection handleToggleSidebar={handleToggleSidebar} />
+      <main className="w-auto">{children}</main>
+      <div className="hidden lg:flex w-[30%]">
+        <RightSection />
       </div>
     </div>
   );

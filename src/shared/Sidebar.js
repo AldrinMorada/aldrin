@@ -2,9 +2,9 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import "./css/sidebar.css";
 
-const Sidebar = () => {
+const   Sidebar = () => {
   return (
-    <aside className="lg:block fixed w-[180px] ml-8">
+    <aside className="fixed w-[200px] mx-2">
       <div className="sidebar shadowed-box pt-4">
         <NavLink to="/admin/analytics">
           <span className="material-icons-sharp">insights</span>
