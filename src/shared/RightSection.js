@@ -4,7 +4,7 @@ import "./css/rightsection.css";
 
 const RightSection = () => {
   return (
-    <div className="fixed w-[350px] right-0">
+    <div className="fixed w-[350px] right-5">
       <section className="shadowed-box rank">
         <div className="logo">
           <img src={Trophy} alt="" />

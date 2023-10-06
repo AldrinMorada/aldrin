@@ -50,10 +50,9 @@ const Test = () => {
 
   return (
     <Layout>
-      <div className={`flex flex-col items-center gap-10 mt-5 w-full`}>
-        <Stepper />
+      <Stepper />
 
-        {/* 
+      {/* 
         <div className="flex justify-center items-center gap-5">
           <Button variant={"success"} onClick={notify}>
             Notify
@@ -88,8 +87,8 @@ const Test = () => {
           </Button>
         </div>
         */}
-        <div className="flex justify-center items-center gap-5">
-          {/* <FadeLoader
+      <div className="flex justify-center items-center gap-5">
+        {/* <FadeLoader
             color={"#a12219"}
             loading={true}
             size={20}
@@ -103,14 +102,13 @@ const Test = () => {
             aria-label="Loading Spinner"
             data-testid="loader"
           /> */}
-          <HashLoader
-            color={"#a12219"}
-            loading={true}
-            size={20}
-            aria-label="Loading Spinner"
-            data-testid="loader"
-          />
-        </div>
+        <HashLoader
+          color={"#a12219"}
+          loading={true}
+          size={20}
+          aria-label="Loading Spinner"
+          data-testid="loader"
+        />
       </div>
     </Layout>
   );

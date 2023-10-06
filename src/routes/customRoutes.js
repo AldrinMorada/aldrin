@@ -14,7 +14,7 @@ import Leaderboards from "../pages/Leaderboards";
 
 const route = () => {
   return (
-    <div className="mt-[calc(7vh+.5rem)]">
+    <div className="mt-[calc(7vh+1.5rem)]">
       <Routes>
         <Route path="/" element={<Navigate to="/home" />} />
         <Route path="/sample_path" element={<Component />} />

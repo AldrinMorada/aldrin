@@ -2,34 +2,14 @@ aside {
     height: 100vh;
 }
 
-aside .toggle {
-    display: flex;
-    align-items: center;
-}
-
-aside .toggle .logo {
-    display: flex;
-    gap: 0.5rem;
-}
-
-aside .toggle .logo img {
-    width: 2rem;
-    height: 2rem;
-}
-
-aside .toggle .close {
-    padding-right: 1rem;
-    display: none;
-}
-
 aside .sidebar {
     display: flex;
+    width: 6rem;
     flex-direction: column;
     border-radius: 15px;
     height: 88vh;
     position: relative;
     transition: all 0.3s ease;
-
 }
 
 aside .sidebar:hover {
@@ -52,15 +32,19 @@ aside .sidebar a span {
     transition: all 0.3s ease;
 }
 
+aside .sidebar a h3 {
+    display: none !important;
+}
+
 aside .sidebar a.active {
     width: 100%;
     color: var(--color-primary);
     margin-left: 0;
-    @apply bg-[#f5f7f9] dark:bg-[#161a1e]
+    @apply bg-[#f5f7f9] dark:bg-[#161a1e];
 }
 
 aside .sidebar a.active::before {
-    content: '';
+    content: "";
     width: 6px;
     height: 18px;
     background-color: var(--color-primary);
@@ -72,62 +56,19 @@ aside .sidebar a.active span {
 }
 
 aside .sidebar a:hover {
-    color: var(--color-primary)
+    color: var(--color-primary);
 }
 
 aside .sidebar a:hover span {
     margin-left: 0.6rem;
 }
 
-@media (max-width: 1200px) {
-    aside .logo h2 {
-        display: none;
+@media (min-width: 768px) {
+    aside .sidebar {
+        width: calc(100% + 2.5rem);
     }
 
-    aside .sidebar h3 {
-        display: none;
-    }
-
-    aside .sidebar a {
-        width: 5.6rem;
-    }
-
-}
-
-@media (max-width: 768px) {
-    aside {
-        position: fixed;
-        width: 15rem;
-        z-index: 3;
-        height: 100vh;
-        animation: showMenu 0.4s ease forwards;
-    }
-
-    @keyframes showMenu {
-        to {
-            left: 0;
-        }
-    }
-
-    aside .logo {
-        margin-left: 1rem;
-    }
-
-    aside .logo h2 {
-        display: inline;
-    }
-
-    aside .sidebar h3 {
-        display: inline;
-    }
-
-    aside .sidebar a {
-        width: 100%;
-        height: 3.4rem;
-    }
-
-    aside .toggle .close {
-        display: inline-block;
-        cursor: pointer;
+    aside .sidebar a h3 {
+        display: inline-flex !important;
     }
 }

@@ -4,7 +4,7 @@ import "./css/sidebar.css";
 
 const   Sidebar = () => {
   return (
-    <aside className="fixed w-[200px] mx-2">
+    <aside className="fixed left-5">
       <div className="sidebar shadowed-box pt-4">
         <NavLink to="/admin/analytics">
           <span className="material-icons-sharp">insights</span>
