@@ -6,7 +6,6 @@ const Leaderboards = () => {
   return (
     <Layout>
       <div className="text-center w-full">
-        <div className="relative"></div>
         <h1 className="tracking-wider font-semibold uppercase">
           ~ Leaderboards ~
         </h1>
