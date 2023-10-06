@@ -24,7 +24,7 @@ const route = () => {
         <Route path="leaderboards" element={<Leaderboards />} />
 
         <Route path="/admin">
-          <Route index element={<Navigate to="test" />} />
+          <Route index element={<Navigate to="analytics" />} />
           <Route path="analytics" element={<Analytics />} />
           <Route path="dashboard" element={<AdminDash />} />
           <Route path="users" element={<Users />} />
