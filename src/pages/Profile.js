@@ -24,7 +24,7 @@ const Profile = ({ subpage }) => {
 
   return (
     <Layout>
-      <div className="shadowed-box rounded-md pb-5">
+      <div className="relative shadowed-box rounded-md pb-5">
         <Background />
         <section className="absolute">
           <div className="pl-[2.5rem] flex">
