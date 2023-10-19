@@ -1,5 +1,5 @@
 .profile-nav-links {
-    @apply flex gap-4 px-6;
+    @apply flex gap-8 px-6;
 }
 
 .profile-nav-links a {

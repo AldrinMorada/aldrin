@@ -5,7 +5,7 @@ import CurrentDate from "./CurrentDate";
 
 const RightSection = () => {
   return (
-    <div className="w-[320px] hidden md:flex md:flex-col">
+    <div className="w-[320px] hidden lg:flex lg:flex-col">
       {/* 
       <section className="shadowed-box rank">
         <div className="logo">
@@ -19,9 +19,9 @@ const RightSection = () => {
       <section className="reminders">
         <div className="header">
           <h2>Reminders</h2>
-          <span className="shadowed-box material-icons-sharp">
-            notifications_none
-          </span>
+          <button className="shadowed-box cursor-pointer rounded-full dark:text-white  hover:text-primary dark:hover:text-primary">
+            <span className="material-icons-sharp">add</span>
+          </button>
         </div>
 
         <div className="shadowed-box notification">
@@ -50,12 +50,12 @@ const RightSection = () => {
           </div>
         </div>
 
-        <div className="shadowed-box notification add-reminder">
+        {/* <div className="shadowed-box notification add-reminder">
           <div>
             <span className="material-icons-sharp">add</span>
           </div>
           <h3>Add Reminder</h3>
-        </div>
+        </div> */}
       </section>
     </div>
   );
