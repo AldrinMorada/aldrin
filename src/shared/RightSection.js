@@ -1,16 +1,20 @@
 import React from "react";
 import Trophy from "./images/icons/rewards/diamond-trophy.png";
 import "./css/rightsection.css";
+import CurrentDate from "./CurrentDate";
 
 const RightSection = () => {
   return (
     <div className="w-[320px] hidden md:flex md:flex-col">
+      {/* 
       <section className="shadowed-box rank">
         <div className="logo">
           <img src={Trophy} alt="" />
           <h1 className="tracking-wider">Diamond III</h1>
         </div>
       </section>
+ */}
+      <CurrentDate />
 
       <section className="reminders">
         <div className="header">
