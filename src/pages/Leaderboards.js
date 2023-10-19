@@ -13,8 +13,6 @@ const Leaderboards = () => {
         <div className="w-full h-full grid gap-y-4 mt-6 p-2">
           <div className="hover-moving__border h-20"></div>
           <div className="hover-moving__border h-20"></div>
-          <div className="hover-moving__border h-20"></div>
-          <div className="hover-moving__border h-20"></div>
         </div>
       </div>
     </Layout>

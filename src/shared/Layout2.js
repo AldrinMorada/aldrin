@@ -3,11 +3,12 @@ import RightSection from "./RightSection";
 
 const Layout2 = ({ children }) => {
   return (
-    <div className="flex w-full justify-end">
-      <main className="w-full lg:w-[55%] px-4 lg:px-0">{children}</main>
-      <div className="hidden lg:flex w-[22%]">
-        <RightSection />
-      </div>
+    <div className="fixed flex justify-between w-full px-6">
+      <div className="lg:w-[6rem]"></div>
+      <main className="h-[90vh] w-[calc(90vw-24rem)] overflow-y-scroll pb-40">
+        {children}
+      </main>
+      <RightSection />
     </div>
   );
 };
