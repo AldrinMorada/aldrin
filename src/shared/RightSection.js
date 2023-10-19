@@ -20,7 +20,7 @@ const RightSection = () => {
         <div className="header">
           <h2>Reminders</h2>
           <button className="shadowed-box cursor-pointer rounded-full dark:text-white  hover:text-primary dark:hover:text-primary">
-            <span className="material-icons-sharp">add</span>
+            <span className="material-icons-sharp font-black">add</span>
           </button>
         </div>
 
