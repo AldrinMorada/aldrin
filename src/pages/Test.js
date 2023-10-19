@@ -50,7 +50,7 @@ const Test = () => {
 
   return (
     <Layout>
-      {/* <Stepper /> */}
+      <Stepper />
 
       {/* 
         <div className="flex justify-center items-center gap-5">
