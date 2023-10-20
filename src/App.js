@@ -6,7 +6,7 @@ import { ToastContainer } from "react-toastify";
 import Navbar from "./components/SharedComponents/Navbar";
 
 function App() {
-  const authenticated = true;
+  const authenticated = false;
   return (
     <>
       {authenticated ? (
