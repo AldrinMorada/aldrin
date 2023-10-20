@@ -1,14 +1,22 @@
 import "./App.css";
 import "../src/shared/css/toast.css";
-import CustomRoutes from "./routes/customRoutes";
+import Authenticated from "./routes/authenticatedRoutes";
+import Unauthenticated from "./routes/unauthenticatedRoutes";
 import { ToastContainer } from "react-toastify";
-import Navbar from "./shared/Navbar";
+import Navbar from "./components/SharedComponents/Navbar";
 
 function App() {
+  const authenticated = true;
   return (
     <>
-      <Navbar />
-      <CustomRoutes />
+      {authenticated ? (
+        <>
+          <Navbar />
+          <Authenticated />
+        </>
+      ) : (
+        <Unauthenticated />
+      )}
       <ToastContainer />
     </>
   );

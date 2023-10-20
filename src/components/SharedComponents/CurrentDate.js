@@ -34,8 +34,8 @@ function CurrentDate() {
 
   const currentDayName = dayNames[currentDay];
   return (
-    <div className="shadowed-box rounded-[1.2rem] text-center p-4">
-      <div className="bg-primary p-2 text-white text-xl tracking-wide font-bold uppercase">
+    <div className="shadowed-box rounded-[1.2rem] text-center pb-4">
+      <div className="bg-danger-dark rounded-t-[1.2rem] p-2 text-white text-2xl tracking-wide font-bold uppercase">
         {currentMonthName}
       </div>
       <div className="[font-size:5rem] font-bold">{currentDate}</div>

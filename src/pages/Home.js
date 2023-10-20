@@ -1,5 +1,5 @@
 import React from "react";
-import Layout from "../shared/Layout2";
+import Layout from "../components/SharedComponents/Layout2";
 const Home = () => {
   return <Layout></Layout>;
 };

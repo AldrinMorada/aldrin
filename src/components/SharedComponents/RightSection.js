@@ -1,11 +1,10 @@
 import React from "react";
-import Trophy from "./images/icons/rewards/diamond-trophy.png";
-import "./css/rightsection.css";
+import "../../shared/css/rightsection.css";
 import CurrentDate from "./CurrentDate";
 
 const RightSection = () => {
   return (
-    <div className="w-[320px] hidden lg:flex lg:flex-col">
+    <div className="w-[min(calc(12vw+3rem),320px)] hidden lg:flex lg:flex-col">
       {/* 
       <section className="shadowed-box rank">
         <div className="logo">

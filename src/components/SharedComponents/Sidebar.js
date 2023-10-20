@@ -1,8 +1,8 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import "./css/sidebar.css";
+import "../../shared/css/sidebar.css";
 
-const   Sidebar = () => {
+const Sidebar = () => {
   return (
     <aside className="">
       <div className="sidebar shadowed-box pt-4">

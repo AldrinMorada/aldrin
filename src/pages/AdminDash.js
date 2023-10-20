@@ -1,5 +1,5 @@
 import React from "react";
-import Layout from "../shared/Layout";
+import Layout from "../components/SharedComponents/Layout";
 
 const AdminDash = () => {
   return <Layout></Layout>;

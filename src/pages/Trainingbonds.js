@@ -1,7 +1,7 @@
 import React from "react";
 
 import "../shared/css/table.css";
-import Layout from "../shared/Layout";
+import Layout from "../components/SharedComponents/Layout";
 
 const TrainingBonds = () => {
   const bondRequests = [

@@ -8,7 +8,6 @@ import TrainingBonds from "../pages/Trainingbonds";
 import AdminHome from "../pages/Home";
 import Test from "../pages/Test";
 import Profile from "../pages/Profile";
-import Component from "../Component";
 import AdminDash from "../pages/AdminDash";
 import Leaderboards from "../pages/Leaderboards";
 
@@ -17,7 +16,6 @@ const route = () => {
     <div className="mt-[calc(7vh+1.5rem)]">
       <Routes>
         <Route path="/" element={<Navigate to="/home" />} />
-        <Route path="/sample_path" element={<Component />} />
         <Route path="home" element={<AdminHome />} />
         <Route path="forums" element={<AdminHome />} />
         <Route path="courses" element={<AdminHome />} />

@@ -1,12 +1,9 @@
-import React, { useState } from "react";
-import Layout from "../shared/Layout";
+import React from "react";
+import Layout from "../components/SharedComponents/Layout";
 import { toast } from "react-toastify";
 
-import Stepper from "../shared/Stepper.jsx";
-import { Button } from "../shared/Button";
-import FadeLoader from "../shared/animations/loader/FadeLoader.tsx";
+import Stepper from "../components/SharedComponents/Stepper.jsx";
 import HashLoader from "../shared/animations/loader/HashLoader.tsx";
-import ClipLoader from "../shared/animations/loader/ClipLoader.tsx";
 
 import "react-toastify/dist/ReactToastify.css";
 
