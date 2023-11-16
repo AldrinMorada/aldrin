@@ -4,8 +4,11 @@ import { toast } from "react-toastify";
 
 import Stepper from "../components/SharedComponents/Stepper.jsx";
 import HashLoader from "../shared/animations/loader/HashLoader.tsx";
+import FadeLoader from "../shared/animations/loader/FadeLoader.tsx";
+import ClipLoader from "../shared/animations/loader/ClipLoader.tsx";
 
 import "react-toastify/dist/ReactToastify.css";
+import { Button } from "../components/SharedComponents/Button.jsx";
 
 const Test = () => {
   const notify = () => {
@@ -49,60 +52,58 @@ const Test = () => {
     <Layout>
       <Stepper />
 
-      {/* 
-        <div className="flex justify-center items-center gap-5">
-          <Button variant={"success"} onClick={notify}>
-            Notify
-          </Button>
+      <div className="flex justify-center items-center gap-5">
+        <Button variant={"success"} onClick={notify}>
+          Notify
+        </Button>
 
-          <Button variant={"danger"} onClick={notify}>
-            Notify
-          </Button>
+        <Button variant={"danger"} onClick={notify}>
+          Notify
+        </Button>
 
-          <Button variant={"warning"} onClick={notify}>
-            Notify
-          </Button>
+        <Button variant={"warning"} onClick={notify}>
+          Notify
+        </Button>
 
-          <Button variant={"info"} onClick={notify}>
-            Notify
-          </Button>
+        <Button variant={"info"} onClick={notify}>
+          Notify
+        </Button>
 
-          <Button variant={"muted"} className="cursor-not-allowed" disabled>
-            Notify
-          </Button>
+        <Button variant={"muted"} className="cursor-not-allowed" disabled>
+          Notify
+        </Button>
 
-          <Button variant={"outline"} onClick={notify}>
-            Notify
-          </Button>
+        <Button variant={"outline"} onClick={notify}>
+          Notify
+        </Button>
 
-          <Button variant={"subtle"} onClick={notify}>
-            Notify
-          </Button>
+        <Button variant={"subtle"} onClick={notify}>
+          Notify
+        </Button>
 
-          <Button variant={"ghost"} onClick={notify}>
-            Notify
-          </Button>
-        </div>
-        */}
+        <Button variant={"ghost"} onClick={notify}>
+          Notify
+        </Button>
+      </div>
       <div className="flex justify-center items-center gap-5">
         {/* <FadeLoader
-            color={"#a12219"}
-            loading={true}
-            size={20}
-            aria-label="Loading Spinner"
-            data-testid="loader"
-          />
-          <ClipLoader
-            color={"#a12219"}
-            loading={true}
-            size={20}
-            aria-label="Loading Spinner"
-            data-testid="loader"
-          /> */}
-        <HashLoader
           color={"#a12219"}
           loading={true}
           size={20}
+          aria-label="Loading Spinner"
+          data-testid="loader"
+        />
+        <ClipLoader
+          color={"#a12219"}
+          loading={true}
+          size={20}
+          aria-label="Loading Spinner"
+          data-testid="loader"
+        /> */}
+        <HashLoader
+          color={"#a12219"}
+          loading={true}
+          size={40}
           aria-label="Loading Spinner"
           data-testid="loader"
         />
